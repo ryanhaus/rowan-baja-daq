@@ -5248,6 +5248,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 125.73) (xy 176.53 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "361078e6-4a84-43b9-a4c3-cd7b9c1948c3")
+	)
+	(wire
+		(pts
 			(xy 87.63 57.15) (xy 87.63 59.69)
 		)
 		(stroke
@@ -5575,6 +5585,16 @@
 			(type default)
 		)
 		(uuid "6190e8ca-e96f-4566-80fb-5b97002603e3")
+	)
+	(wire
+		(pts
+			(xy 179.07 125.73) (xy 179.07 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "636018cd-8b5e-415d-bbfb-85894630273f")
 	)
 	(wire
 		(pts
@@ -6788,6 +6808,28 @@
 			)
 		)
 	)
+	(global_label "SDRAM_NBL1"
+		(shape output)
+		(at 179.07 128.27 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2831ab96-8344-4dfb-8e26-56febe988242")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 179.07 143.3504 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDMMC_D2"
 		(shape bidirectional)
 		(at 173.99 57.15 90)
@@ -7593,6 +7635,28 @@
 		(uuid "9e6b6b66-f144-4ca7-9777-b68a3c74cf20")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 143.51 140.8104 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDRAM_NBL0"
+		(shape output)
+		(at 176.53 128.27 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a05ce294-9e91-46a5-a598-2b30af1a2d40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 143.3504 90)
 			(effects
 				(font
 					(size 1.27 1.27)
