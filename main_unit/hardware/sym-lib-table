@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "LD39200PU33R")(type "KiCad")(uri "${KIPRJMOD}/lib/LD39200PU33R/LD39200PU33R.kicad_sym")(options "")(descr ""))
+  (lib (name "W9864G6KH-6")(type "KiCad")(uri "${KIPRJMOD}/lib/W9864G6KH-6/W9864G6KH-6.kicad_sym")(options "")(descr ""))
 )
