@@ -10211,7 +10211,91 @@
 		)
 	)
 	(sheet
-		(at 41.91 143.51)
+		(at 15.24 184.15)
+		(size 21.59 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1066afca-0a6b-4ef0-a47e-6cb6f4f4f270")
+		(property "Sheetname" "Debug"
+			(at 15.24 183.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 15.24 193.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "main_unit"
+				(path "/c1e2a568-b99f-4357-b0bb-65969671b711"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 167.64)
+		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3afd492b-35c8-49a4-8539-71e78eba4668")
+		(property "Sheetname" "SDRAM"
+			(at 15.24 166.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sdram.kicad_sch"
+			(at 15.24 178.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "main_unit"
+				(path "/c1e2a568-b99f-4357-b0bb-65969671b711"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 134.62)
 		(size 21.59 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10227,7 +10311,7 @@
 		)
 		(uuid "4efa3d09-d133-41ab-98e7-a7ed17447031")
 		(property "Sheetname" "Power"
-			(at 41.91 142.7984 0)
+			(at 15.24 133.9084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10236,7 +10320,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 41.91 154.2546 0)
+			(at 15.24 145.3646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10248,6 +10332,56 @@
 			(project "main_unit"
 				(path "/c1e2a568-b99f-4357-b0bb-65969671b711"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 151.13)
+		(size 21.59 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8d15cbf3-f8cd-48ab-b3c4-b2dcdd94b087")
+		(property "Sheetname" "Display"
+			(at 15.24 150.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display.kicad_sch"
+			(at 15.24 161.8746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 15.24 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "main_unit"
+				(path "/c1e2a568-b99f-4357-b0bb-65969671b711"
+					(page "3")
 				)
 			)
 		)

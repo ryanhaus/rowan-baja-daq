@@ -617,6 +617,18 @@
     [
       "4efa3d09-d133-41ab-98e7-a7ed17447031",
       "Power"
+    ],
+    [
+      "8d15cbf3-f8cd-48ab-b3c4-b2dcdd94b087",
+      "Display"
+    ],
+    [
+      "3afd492b-35c8-49a4-8539-71e78eba4668",
+      "SDRAM"
+    ],
+    [
+      "1066afca-0a6b-4ef0-a47e-6cb6f4f4f270",
+      "Debug"
     ]
   ],
   "text_variables": {}
