@@ -4,4 +4,5 @@
   (lib (name "W9864G6KH-6")(type "KiCad")(uri "${KIPRJMOD}/lib/W9864G6KH-6")(options "")(descr ""))
   (lib (name "62684-402100ALF")(type "KiCad")(uri "${KIPRJMOD}/lib/62684-402100ALF")(options "")(descr ""))
   (lib (name "MAX25512ATG/V+T")(type "KiCad")(uri "${KIPRJMOD}/lib/MAX25512ATG_V_T/footprints.pretty")(options "")(descr ""))
+  (lib (name "865080342006")(type "KiCad")(uri "${KIPRJMOD}/lib/865080342006")(options "")(descr ""))
 )
