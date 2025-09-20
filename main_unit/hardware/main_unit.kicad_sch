@@ -9033,23 +9033,22 @@
 		(dnp no)
 		(uuid "814efc28-b34e-4f2f-99cd-9be50cf1a468")
 		(property "Reference" "SW1"
-			(at 54.61 125.222 0)
+			(at 54.102 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_SPST"
-			(at 54.61 124.46 0)
+		(property "Value" "PTS636SM43SMTR LFS"
+			(at 53.848 125.73 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
 			(at 54.61 128.27 0)
 			(effects
 				(font
