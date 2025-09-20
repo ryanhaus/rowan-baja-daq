@@ -5,4 +5,5 @@
   (lib (name "62684-402100ALF")(type "KiCad")(uri "${KIPRJMOD}/lib/62684-402100ALF")(options "")(descr ""))
   (lib (name "MAX25512ATG/V+T")(type "KiCad")(uri "${KIPRJMOD}/lib/MAX25512ATG_V_T/footprints.pretty")(options "")(descr ""))
   (lib (name "865080342006")(type "KiCad")(uri "${KIPRJMOD}/lib/865080342006")(options "")(descr ""))
+  (lib (name "NRS4018T220MDGJ")(type "KiCad")(uri "${KIPRJMOD}/lib/NRS4018T220MDGJ")(options "")(descr ""))
 )
