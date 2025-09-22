@@ -3081,7 +3081,7 @@
 	)
 	(text "V_{OUT_BSTMON} = 0.95*(1+10k/1k) = 10.45V"
 		(exclude_from_sim no)
-		(at 267.97 71.628 90)
+		(at 278.638 72.136 90)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -3177,6 +3177,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29ff048e-a166-4f06-ab6b-879a58ff0322")
+	)
+	(junction
+		(at 260.35 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31dde3f6-d9be-440d-afb0-2dd80309aeb2")
 	)
 	(junction
 		(at 212.09 55.88)
@@ -3545,6 +3551,16 @@
 			(type default)
 		)
 		(uuid "15f287be-50ef-43cd-b2e5-92011ede145b")
+	)
+	(wire
+		(pts
+			(xy 260.35 71.12) (xy 267.97 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1614418b-0dac-44a8-bc20-2461b5cbcd3b")
 	)
 	(wire
 		(pts
@@ -4798,6 +4814,26 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 72.39) (xy 267.97 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c691911d-f26c-4cb6-acf0-5bd401af3694")
+	)
+	(wire
+		(pts
+			(xy 260.35 78.74) (xy 260.35 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7313de7-5d09-4f91-8d4d-92084440492a")
+	)
+	(wire
+		(pts
 			(xy 160.02 92.71) (xy 171.45 92.71)
 		)
 		(stroke
@@ -4838,7 +4874,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 77.47) (xy 260.35 80.01)
+			(xy 260.35 77.47) (xy 260.35 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4968,6 +5004,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 78.74) (xy 267.97 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb049c12-1681-48c1-a143-034f8dcefaaa")
+	)
+	(wire
+		(pts
 			(xy 246.38 104.14) (xy 246.38 105.41)
 		)
 		(stroke
@@ -4975,6 +5021,16 @@
 			(type default)
 		)
 		(uuid "edb2e816-6951-452f-8f0a-d3f4bb56d9a4")
+	)
+	(wire
+		(pts
+			(xy 267.97 77.47) (xy 267.97 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee34c5cd-f09b-4bcf-8046-7999ea6bfb83")
 	)
 	(wire
 		(pts
@@ -8578,6 +8634,76 @@
 			(project ""
 				(path "/c1e2a568-b99f-4357-b0bb-65969671b711/8d15cbf3-f8cd-48ab-b3c4-b2dcdd94b087"
 					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 267.97 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7e32909-1dbe-4290-9f79-72fb43418963")
+		(property "Reference" "C46"
+			(at 270.51 73.6662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47p"
+			(at 270.51 76.2062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 267.97 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 267.97 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f1fa70ed-a7e8-41f1-9249-567123e372e5")
+		)
+		(pin "1"
+			(uuid "8b02d799-26cb-41c2-a275-da2675c06a35")
+		)
+		(instances
+			(project ""
+				(path "/c1e2a568-b99f-4357-b0bb-65969671b711/8d15cbf3-f8cd-48ab-b3c4-b2dcdd94b087"
+					(reference "C46")
 					(unit 1)
 				)
 			)
