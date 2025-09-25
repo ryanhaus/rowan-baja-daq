@@ -629,6 +629,10 @@
     [
       "1066afca-0a6b-4ef0-a47e-6cb6f4f4f270",
       "Debug"
+    ],
+    [
+      "2f9244f8-a6d2-409d-ba0a-3a4ceee6ca8f",
+      "CANBus"
     ]
   ],
   "text_variables": {}
