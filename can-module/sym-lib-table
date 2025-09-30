@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PIC32CM1216JH01048-I/U5B")(type "KiCad")(uri "${KIPRJMOD}/lib/PIC32CM1216JH01048-I_U5B/PIC32CM1216JH01048-I_U5B.kicad_sym")(options "")(descr ""))
+)
