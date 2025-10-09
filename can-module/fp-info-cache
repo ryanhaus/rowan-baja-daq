@@ -1,4 +1,4 @@
-26653518606114791
+26655278628090382
 ATA6560-GBQW-N
 VDFN8_3X3_MCH
 
@@ -6719,6 +6719,13 @@ capacitor tantalum
 0
 2
 2
+Conn01x04
+01x04_1mm
+
+
+0
+4
+4
 Connector
 BJB_Pico_46.110.1001_Receptacle_Horizontal
 BJB Pico, single terminal block/receptacle, uninsulated, SMD, 6.9x2.3x2.7mm, https://www.bjb.com/media/7a/b3/df/1740905546/DM-6265102-v6_BJB_Datasheet_46.110.1001-0_SMD_Terminal_block_without_housing_Update_03_2022.PDF
