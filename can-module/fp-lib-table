@@ -3,4 +3,5 @@
   (lib (name "PIC32CM1216JH01048-I/U5B")(type "KiCad")(uri "${KIPRJMOD}/lib/PIC32CM1216JH01048-I_U5B")(options "")(descr ""))
   (lib (name "ATA6560-GBQW-N")(type "KiCad")(uri "${KIPRJMOD}/lib/ATA6560-GBQW-N/footprints.pretty")(options "")(descr ""))
   (lib (name "Conn01x04")(type "KiCad")(uri "${KIPRJMOD}/lib/Conn_01x04/Conn01x04.pretty")(options "")(descr ""))
+  (lib (name "SolderJumperSmall")(type "KiCad")(uri "${KIPRJMOD}/lib/SolderJumperSmall/SolderJumperSmall.pretty")(options "")(descr ""))
 )

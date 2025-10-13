@@ -634,6 +634,10 @@
     [
       "40cb4209-4f7f-4a38-b0f0-dee54a92ee91",
       "Root"
+    ],
+    [
+      "ea6f88df-e2ca-4034-af53-6327e26a299e",
+      "GPIO Resistors"
     ]
   ],
   "text_variables": {}
