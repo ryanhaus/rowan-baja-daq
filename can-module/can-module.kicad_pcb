@@ -8900,8 +8900,8 @@
 		(uuid "92beeab2-33b9-4b23-8eff-7fd9966f847c")
 		(effects
 			(font
-				(size 1.25 1.25)
-				(thickness 0.25)
+				(size 1 1)
+				(thickness 0.2)
 				(bold yes)
 			)
 			(justify bottom)
@@ -9026,19 +9026,6 @@
 			(font
 				(size 0.75 0.75)
 				(thickness 0.09375)
-			)
-			(justify top)
-		)
-	)
-	(gr_text "ROWAN MOTORSPORTS"
-		(at 125.45 49.7 0)
-		(layer "F.SilkS")
-		(uuid "fbdff5f9-9a0b-4f7e-bf06-bf8cb8ffb8b0")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.16)
-				(bold yes)
 			)
 			(justify top)
 		)
@@ -9222,6 +9209,19 @@
 				(thickness 0.09375)
 			)
 			(justify right top mirror)
+		)
+	)
+	(gr_text "ROWAN MOTORSPORTS"
+		(at 125.45 59 0)
+		(layer "B.SilkS")
+		(uuid "fbdff5f9-9a0b-4f7e-bf06-bf8cb8ffb8b0")
+		(effects
+			(font
+				(size 1.25 1.25)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify mirror)
 		)
 	)
 	(segment
