@@ -7258,7 +7258,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "B.Cu")
 		(uuid "1211cb8f-f002-4b33-821b-2662250cfe5c")
-		(at 125.6 45.45 180)
+		(at 124.549999 51.75 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP3"
@@ -7367,7 +7367,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "B.Cu")
 		(uuid "1f27c718-8743-49f3-96e3-650c2d760fad")
-		(at 127.6 45.45 180)
+		(at 126.549999 51.75 180)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP4"
@@ -9091,7 +9091,7 @@
 		)
 	)
 	(gr_text "IO"
-		(at 125.6 46.45 -180)
+		(at 124.549999 52.75 -180)
 		(layer "B.SilkS")
 		(uuid "5d8c8cbe-cb0a-481e-9e09-831d54bc95a2")
 		(effects
@@ -9151,7 +9151,7 @@
 		)
 	)
 	(gr_text "CLK"
-		(at 127.6 46.45 -180)
+		(at 126.549999 52.75 -180)
 		(layer "B.SilkS")
 		(uuid "9e9418ee-b143-49d2-9a5c-6aa2508a1d3a")
 		(effects
@@ -9187,7 +9187,7 @@
 		)
 	)
 	(gr_text "SWD"
-		(at 126.6 43.45 -180)
+		(at 125.5 49.75 -180)
 		(layer "B.SilkS")
 		(uuid "f1e8341a-c9cd-45c8-8a50-cf70019a445a")
 		(effects
