@@ -58,7 +58,7 @@
 	(attr smd)
 	(fp_rect
 		(start 0.5 0.1)
-		(end 0.7 0.5)
+		(end 0.9 0.7)
 		(stroke
 			(width 0)
 			(type solid)
@@ -68,8 +68,8 @@
 		(uuid "36377be2-56a1-4b2e-891f-1b0392a18458")
 	)
 	(fp_rect
-		(start 1.1 0.1)
-		(end 1.3 0.5)
+		(start 1.3 0.1)
+		(end 1.7 0.7)
 		(stroke
 			(width 0)
 			(type solid)
@@ -80,7 +80,7 @@
 	)
 	(fp_line
 		(start 0 0)
-		(end 0 0.6)
+		(end 0 0.8)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -90,7 +90,7 @@
 	)
 	(fp_line
 		(start 0 0)
-		(end 1.8 0)
+		(end 2.2 0)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -99,8 +99,8 @@
 		(uuid "47fa6b39-dc4f-4948-90f8-a0ca5939f8c8")
 	)
 	(fp_line
-		(start 1.8 0.6)
-		(end 0 0.6)
+		(start 2.2 0.8)
+		(end 0 0.8)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -109,8 +109,8 @@
 		(uuid "c03091fe-c21e-493e-be14-892e4b84fedd")
 	)
 	(fp_line
-		(start 1.8 0.6)
-		(end 1.8 0)
+		(start 2.2 0.8)
+		(end 2.2 0)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -119,22 +119,54 @@
 		(uuid "f4bbf8a9-1c11-47f7-915a-a4b743b5c2f9")
 	)
 	(pad "1" smd rect
-		(at 0.3 0.3)
-		(size 0.4 0.4)
+		(at 0.3 0.4)
+		(size 0.4 0.6)
 		(layers "F.Cu" "F.Mask")
 		(uuid "82380dc6-4090-440b-b2ea-6f5691882c4c")
 	)
 	(pad "2" smd rect
-		(at 0.9 0.3)
-		(size 0.4 0.4)
+		(at 1.1 0.4)
+		(size 0.4 0.6)
 		(layers "F.Cu" "F.Mask")
 		(uuid "f4e11d60-1635-45b0-b81e-bdf927323b07")
 	)
 	(pad "3" smd rect
-		(at 1.5 0.3)
-		(size 0.4 0.4)
+		(at 1.9 0.4)
+		(size 0.4 0.6)
 		(layers "F.Cu" "F.Mask")
 		(uuid "67330958-450f-49dd-8222-7f0fad2e5ef7")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "544e39ed-792e-45e9-b7d6-041abf49055a")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 0.1 0.1) (xy 2.1 0.1) (xy 2.1 0.7) (xy 0.1 0.7)
+			)
+		)
 	)
 	(embedded_fonts no)
 )
