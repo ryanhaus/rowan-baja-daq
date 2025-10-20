@@ -6,3 +6,5 @@
 *.bak
 production
 fabrication-toolkit-options.json
+*.step
+*.stp
