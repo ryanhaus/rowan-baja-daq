@@ -6,4 +6,5 @@
   (lib (name "SolderJumperSmall")(type "KiCad")(uri "${KIPRJMOD}/lib/SolderJumperSmall/SolderJumperSmall.pretty")(options "")(descr ""))
   (lib (name "Conn_01x08")(type "KiCad")(uri "${KIPRJMOD}/lib/Conn_01x08/Conn_01x08.pretty")(options "")(descr ""))
   (lib (name "Logos")(type "KiCad")(uri "${KIPRJMOD}/lib/Logos")(options "")(descr ""))
+  (lib (name "Conn_01x02")(type "KiCad")(uri "${KIPRJMOD}/lib/Conn_01x02/Conn_01x02.pretty")(options "")(descr ""))
 )

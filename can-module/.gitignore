@@ -6,4 +6,5 @@
 *.bak
 production
 fabrication-toolkit-options.json
-*.FCBak
+*.step
+*.stp

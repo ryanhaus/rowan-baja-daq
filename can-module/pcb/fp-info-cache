@@ -1,4 +1,4 @@
-26743068025405008
+26746590263314070
 ATA6560-GBQW-N
 VDFN8_3X3_MCH
 
@@ -6733,13 +6733,20 @@ Conn01x04
 0
 4
 4
-Conn_01x08
+Conn_01x02
 Untitled
 
 
 0
 0
 0
+Conn_01x08
+Untitled
+
+
+0
+8
+8
 Connector
 BJB_Pico_46.110.1001_Receptacle_Horizontal
 BJB Pico, single terminal block/receptacle, uninsulated, SMD, 6.9x2.3x2.7mm, https://www.bjb.com/media/7a/b3/df/1740905546/DM-6265102-v6_BJB_Datasheet_46.110.1001-0_SMD_Terminal_block_without_housing_Update_03_2022.PDF
@@ -70615,6 +70622,13 @@ Yellow 5381 Series LED
 0
 2
 2
+Logos
+RowanMotorsports
+
+
+0
+0
+0
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
