@@ -1,0 +1,9 @@
+*autosave*
+*auto_save*
+*-backups
+*.kicad_prl
+*.lck
+*.bak
+production
+fabrication-toolkit-options.json
+*.FCBak
