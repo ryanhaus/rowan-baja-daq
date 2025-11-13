@@ -2385,8 +2385,8 @@
 		)
 		(uuid "ff58e422-70b7-4f0d-aee5-4ab51a420b43")
 	)
-	(label "SD_DO"
-		(at 171.45 115.57 180)
+	(label "MCU_DI"
+		(at 85.09 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2394,9 +2394,20 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "02aa4671-d99d-4863-8ad9-a3fa8778cf57")
+		(uuid "09022fe0-56e0-42bd-b3df-7e856d4e4dc5")
 	)
 	(label "MCU_CLK"
+		(at 113.03 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bca0cf8-11d8-4dd3-b3eb-a854fb02d080")
+	)
+	(label "MCU_DI"
 		(at 113.03 118.11 0)
 		(effects
 			(font
@@ -2405,29 +2416,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0ab0d10e-10c8-4e33-8afb-6545dc0b4ef9")
-	)
-	(label "~{MCU_CS}"
-		(at 113.03 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c0e3bd3-1994-408e-9cb3-ed0089e6a0c5")
-	)
-	(label "SD_DI"
-		(at 171.45 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right bottom)
-		)
-		(uuid "193a256b-cbf1-4d0e-a8ae-346b0a0a083c")
+		(uuid "22d402f5-3cbd-4362-907c-0aebb1a5bf27")
 	)
 	(label "SD_DO"
 		(at 194.31 123.19 0)
@@ -2440,6 +2429,17 @@
 		)
 		(uuid "24895ea5-7b43-47f1-9b42-1c9a5fb0916c")
 	)
+	(label "SD_DO"
+		(at 171.45 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "2ac7edf2-3bca-4d44-bbed-27bdff25a188")
+	)
 	(label "SD_CLK"
 		(at 194.31 118.11 0)
 		(effects
@@ -2451,30 +2451,8 @@
 		)
 		(uuid "3e076aef-28b1-418d-a46b-2567c28aa29f")
 	)
-	(label "~{SD_CS}"
-		(at 171.45 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right bottom)
-		)
-		(uuid "445321fe-5241-428a-9b21-be8ef4a6e5f5")
-	)
-	(label "SD_CLK"
-		(at 171.45 113.03 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right bottom)
-		)
-		(uuid "509f3ac6-b6ef-4b24-9e13-8ee461e6c6a8")
-	)
-	(label "MCU_DI"
-		(at 113.03 115.57 0)
+	(label "~{MCU_CS}"
+		(at 113.03 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2482,18 +2460,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "67e918a0-9b1d-4515-9a2f-307a4d2734a0")
+		(uuid "4718fcbc-f68d-4293-97d4-d02466a9d239")
 	)
-	(label "~{MCU_CS}"
-		(at 85.09 111.76 180)
+	(label "MCU_DO"
+		(at 113.03 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(thickness 0.1588)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "7390eb88-12cb-49f3-b9b7-86b719866e34")
+		(uuid "70a40fff-a485-46dd-8545-9540161c387f")
 	)
 	(label "~{SD_CS}"
 		(at 194.31 110.49 0)
@@ -2506,8 +2484,8 @@
 		)
 		(uuid "7d26d194-a15d-41ee-bc2e-ba2679aa1916")
 	)
-	(label "MCU_DO"
-		(at 85.09 119.38 180)
+	(label "~{SD_CS}"
+		(at 171.45 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2515,10 +2493,10 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9c215e69-702f-417f-b92d-cd2bd1427bd6")
+		(uuid "800c4e69-9950-41a9-960b-8093f0e070bd")
 	)
-	(label "MCU_CLK"
-		(at 85.09 116.84 180)
+	(label "~{MCU_CS}"
+		(at 85.09 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2526,18 +2504,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a466b1f7-43c8-4c98-be59-69ad3a6afd80")
+		(uuid "974e8b23-591b-4899-a30f-1c7e688c4e4c")
 	)
-	(label "MCU_DO"
-		(at 113.03 120.65 0)
+	(label "SD_CLK"
+		(at 171.45 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(thickness 0.1588)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "a47b1ac9-9d5b-4fb9-b89a-2ec81d1d8563")
+		(uuid "a9452d88-bfd1-46e9-91de-f2bd20ce3645")
 	)
 	(label "SD_DI"
 		(at 194.31 113.03 0)
@@ -2550,8 +2528,8 @@
 		)
 		(uuid "b30430e1-da98-43c2-b0b6-3f26da74abf9")
 	)
-	(label "MCU_DI"
-		(at 85.09 114.3 180)
+	(label "MCU_CLK"
+		(at 85.09 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2559,7 +2537,29 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b73ba5ec-ecc4-49d8-b50c-2f26ad9b9c7a")
+		(uuid "d0ae8d4b-d296-4687-9e92-172ce5186683")
+	)
+	(label "MCU_DO"
+		(at 85.09 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6ca70c8-ee76-4c09-a75c-fabab389170e")
+	)
+	(label "SD_DI"
+		(at 171.45 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "df88a35a-a28d-4bdc-9f97-3b81e2685ca9")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -3017,7 +3017,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ULTRATHIN_MLP_12L_ONS"
+		(property "Footprint" "FXMAR2104UMX:ULTRATHIN_MLP_12L_ONS"
 			(at 121.92 107.95 0)
 			(effects
 				(font
