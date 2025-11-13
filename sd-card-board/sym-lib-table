@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "FXMAR2104UMX")(type "KiCad")(uri "${KIPRJMOD}/lib/FXMAR2104UMX/2025-11-13_15-37-18.kicad_sym")(options "")(descr ""))
+)

@@ -8,3 +8,4 @@ production
 fabrication-toolkit-options.json
 *.step
 *.stp
+fp-info-cache
