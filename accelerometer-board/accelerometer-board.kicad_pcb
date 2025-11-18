@@ -758,7 +758,6 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(net 100320935)
 			(uuid "a9f50141-1bd2-4132-947a-792d1e45a177")
 		)
 		(fp_circle
@@ -770,7 +769,6 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(net 100320935)
 			(uuid "5e0d663a-17a8-4cc4-a997-0997c35cbad0")
 		)
 		(fp_text user "${REFERENCE}"
@@ -3459,7 +3457,7 @@
 		(descr "LGA12")
 		(tags "lga land grid array")
 		(property "Reference" "U1"
-			(at 0 2 0)
+			(at -2.5 -0.5 0)
 			(layer "F.SilkS")
 			(uuid "e72f1666-f379-45e4-a495-a2b99c2a6a18")
 			(effects
@@ -3928,7 +3926,6 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(net 100320935)
 			(uuid "647bb410-48d6-47c3-a167-0bba98089008")
 		)
 		(fp_circle
@@ -3940,7 +3937,6 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(net 100320935)
 			(uuid "93e2e8de-d9fc-49fa-aa3d-e71e60f0a878")
 		)
 		(fp_text user "${REFERENCE}"
@@ -4295,7 +4291,7 @@
 		(descr "LGA12")
 		(tags "lga land grid array")
 		(property "Reference" "U2"
-			(at -0.75 -2 0)
+			(at -2.5 -1.25 0)
 			(layer "F.SilkS")
 			(uuid "d0389fe0-3b82-4c7c-b017-25979398c9ac")
 			(effects
@@ -5755,6 +5751,41 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "891268c8-9ea0-4c74-9571-e53300a3d583")
+	)
+	(gr_text "Rev A"
+		(at 88.5 85 0)
+		(layer "F.SilkS")
+		(uuid "12193376-c96d-4997-bc4b-8198233938f5")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+		)
+	)
+	(gr_text "Accel."
+		(at 110.75 76.225 270)
+		(layer "F.SilkS")
+		(uuid "7b109db0-e8a7-46f6-8a31-a3d1c9691379")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "ROWAN MOTORSPORTS"
+		(at 109 76.225 270)
+		(layer "F.SilkS")
+		(uuid "c3f6d3c8-c38a-4823-a637-68782bf25712")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1875)
+				(bold yes)
+			)
+		)
 	)
 	(dimension
 		(type orthogonal)
