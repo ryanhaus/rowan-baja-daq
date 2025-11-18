@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "FXMA2102L8X")(type "KiCad")(uri "${KIPRJMOD}/lib/FXMA2102L8X/2025-11-18_18-54-17.kicad_sym")(options "")(descr ""))
+)
