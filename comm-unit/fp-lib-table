@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Wio-SX1262")(type "KiCad")(uri "${KIPRJMOD}/lib/Wio-SX1262")(options "")(descr ""))
+  (lib (name "TXS0108ERGYR")(type "KiCad")(uri "${KIPRJMOD}/lib/TXS0108ERGYR")(options "")(descr ""))
+)
