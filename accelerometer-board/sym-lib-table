@@ -1,5 +1,5 @@
 (sym_lib_table
   (version 7)
-  (lib (name "FXMA2102L8X")(type "KiCad")(uri "${KIPRJMOD}/lib/FXMA2102L8X/2025-11-18_18-54-17.kicad_sym")(options "")(descr ""))
+  (lib (name "FXMA2104L8X")(type "KiCad")(uri "${KIPRJMOD}/lib/FXMAR2104UMX/2025-11-13_15-37-18.kicad_sym")(options "")(descr ""))
   (lib (name "BMI323")(type "KiCad")(uri "${KIPRJMOD}/lib/BMI323/2025-11-25_19-08-46.kicad_sym")(options "")(descr ""))
 )
