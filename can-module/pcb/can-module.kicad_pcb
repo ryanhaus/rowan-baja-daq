@@ -7874,7 +7874,7 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "ROWAN MOTORSPORTS\nRev A"
+	(gr_text "Rev A"
 		(at 112.95 68.275 0)
 		(layer "F.SilkS")
 		(uuid "e81472b6-39e3-41f6-923c-c9121711fbbf")
