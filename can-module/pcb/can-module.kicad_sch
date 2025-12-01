@@ -7379,7 +7379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Conn01x04:01x04_1mm"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
 			(at 209.55 41.91 0)
 			(effects
 				(font
