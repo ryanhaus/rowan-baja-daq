@@ -3636,12 +3636,20 @@
 		(uuid "b9d0d174-66cc-4850-b67c-c1084436647d")
 	)
 	(no_connect
+		(at 135.89 152.4)
+		(uuid "c9027528-7917-469a-954d-ed3135605d60")
+	)
+	(no_connect
 		(at 166.37 121.92)
 		(uuid "cb34bc5c-523f-42f1-be72-2cee87aded63")
 	)
 	(no_connect
 		(at 120.65 104.14)
 		(uuid "d32b6f94-2f30-48b9-b865-261e2f6e2b1c")
+	)
+	(no_connect
+		(at 133.35 152.4)
+		(uuid "dc69a1ae-aaa1-4496-85c4-250671ad5f78")
 	)
 	(no_connect
 		(at 120.65 119.38)
@@ -4631,16 +4639,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 152.4) (xy 133.35 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98b0e4f0-679e-41c1-8080-d116d2f334af")
-	)
-	(wire
-		(pts
 			(xy 39.37 119.38) (xy 49.53 119.38)
 		)
 		(stroke
@@ -4668,16 +4666,6 @@
 			(type default)
 		)
 		(uuid "9e18ca48-aaa6-4acf-aba7-e62f2afad716")
-	)
-	(wire
-		(pts
-			(xy 135.89 152.4) (xy 135.89 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a07c2ef0-9d9c-4f26-8b3a-b18cb9f365a8")
 	)
 	(wire
 		(pts
@@ -6582,7 +6570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Conn_01x02:Untitled"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 88.9 157.48 0)
 			(effects
 				(font
@@ -8286,7 +8274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Conn_01x08:Untitled"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
 			(at 87.63 116.84 0)
 			(effects
 				(font
