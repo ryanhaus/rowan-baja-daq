@@ -3375,7 +3375,7 @@
 		)
 		(uuid "e50f766a-6558-49e4-9cfe-4bebb64a4ee1")
 	)
-	(text "*All TVS diodes are PESD5V0S1BAF\nunless otherwise noted"
+	(text "*All TVS diodes are DESD5V0S1BA-7\nunless otherwise noted"
 		(exclude_from_sim no)
 		(at 238.252 28.702 0)
 		(effects
