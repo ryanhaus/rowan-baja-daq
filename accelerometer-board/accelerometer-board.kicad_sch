@@ -3380,7 +3380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x02_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical"
 			(at 52.07 86.36 0)
 			(effects
 				(font
@@ -3651,7 +3651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x08_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x08_P1.27mm_Vertical"
 			(at 55.88 119.38 0)
 			(effects
 				(font
@@ -5172,7 +5172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMI323_BOS"
+		(property "Footprint" "BMI323:BMI323_BOS"
 			(at 213.36 90.17 0)
 			(effects
 				(font
@@ -5481,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ULTRATHIN_MLP_12L_ONS"
+		(property "Footprint" "FXMA2104L8X:ULTRATHIN_MLP_12L_ONS"
 			(at 120.65 119.38 0)
 			(effects
 				(font
