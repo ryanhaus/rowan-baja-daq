@@ -7,3 +7,4 @@
 production
 fabrication-toolkit-options.json
 *.FCBak
+*cache
