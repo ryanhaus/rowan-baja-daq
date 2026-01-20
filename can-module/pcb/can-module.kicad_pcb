@@ -133,7 +133,7 @@
 			(at 0 -1.448 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ab871708-d00f-4dc1-a5a7-f1b0ab117176")
+			(uuid "7b88c4ef-a8df-443a-b3ac-3278a36817c0")
 			(effects
 				(font
 					(size 1 1)
@@ -144,7 +144,7 @@
 		(property "Value" "TestPoint"
 			(at 0 1.55 0)
 			(layer "F.Fab")
-			(uuid "a4e1f60b-212b-488e-bb24-826688100ff9")
+			(uuid "8fb03115-e465-4250-aa9f-669e4d09d060")
 			(effects
 				(font
 					(size 1 1)
@@ -157,7 +157,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f2ffa28f-5fb4-4ed4-b72e-5f4339355986")
+			(uuid "8441e243-db8f-409d-8829-8929b96b9e67")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -170,7 +170,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9f742343-dd0b-4ff4-b422-36a77dd59ad4")
+			(uuid "5c08cc33-f358-4d2c-997f-44786aaf0d36")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -511,7 +511,7 @@
 			(at 0 -1.448 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "5a53496e-74fc-44bb-a20b-50c3dd87e2a4")
+			(uuid "f1887236-48de-40b0-aeec-272b40d313c1")
 			(effects
 				(font
 					(size 1 1)
@@ -522,7 +522,7 @@
 		(property "Value" "TestPoint"
 			(at 0 1.55 0)
 			(layer "F.Fab")
-			(uuid "80c7fd02-5294-41f5-a728-73054c7fee84")
+			(uuid "12ebea1b-0de4-4d35-bde6-a74daeae203e")
 			(effects
 				(font
 					(size 1 1)
@@ -535,7 +535,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4460ade6-835d-4750-b874-56349b8f6d03")
+			(uuid "cb006d00-e8d6-4ef8-a91d-f834cd7bac5a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -548,7 +548,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0e23443c-ab34-4733-a1e3-eb40d6444ae8")
+			(uuid "2e79a86f-c0fa-4098-bebd-47a79710357b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,7 +5227,7 @@
 			(at 0 -1.745 180)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "beab92bb-9b3e-4585-8c95-5b0497cfd526")
+			(uuid "f6953644-4b39-49f2-8c1b-e37d238d12e8")
 			(effects
 				(font
 					(size 1 1)
@@ -5238,7 +5238,7 @@
 		(property "Value" "Conn_01x08_Socket"
 			(at 0 10.635 180)
 			(layer "F.Fab")
-			(uuid "42c17921-d428-47ca-a4d9-64a6f1ee857d")
+			(uuid "6f1cb259-3318-48f9-b207-4be4a292346a")
 			(effects
 				(font
 					(size 1 1)
@@ -5250,7 +5250,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f84d28cd-97c9-46eb-a63b-061c1b1be5c7")
+			(uuid "2f8181ec-7889-417e-a75f-c656f243a5eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,7 +5262,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f25405c-8f73-43d1-8eb5-ae20f1e94660")
+			(uuid "f8bfe10f-3085-46cb-8b6d-d61c56ac5951")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11172,6 +11172,64 @@
 				(xy 119.627589 50.599992) (xy 119.558916 50.702767) (xy 119.511615 50.816963) (xy 119.4875 50.938196)
 				(xy 112.9505 50.938196) (xy 112.9505 49.7995) (xy 112.969407 49.741309) (xy 113.018907 49.705345)
 				(xy 113.0495 49.7005) (xy 137.8505 49.7005)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.SilkS")
+		(uuid "24883546-37c1-409d-b7a2-3f0a9763545e")
+		(hatch none 0.1)
+		(connect_pads
+			(clearance 0.1)
+		)
+		(min_thickness 0)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 126.5 52.5) (xy 127.25 53.25) (xy 126.5 54)
+			)
+		)
+		(filled_polygon
+			(layer "F.SilkS")
+			(island)
+			(pts
+				(xy 127.251 53.249586) (xy 127.251 53.250414) (xy 126.500235 54.00118) (xy 126.499 54.000668) (xy 126.499 52.499332)
+				(xy 126.500235 52.49882)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.SilkS")
+		(uuid "9d5e12ab-b048-4505-b08a-d12746a1da6f")
+		(hatch none 0.1)
+		(connect_pads
+			(clearance 0.1)
+		)
+		(min_thickness 0)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 126.5 64.05) (xy 127.25 64.8) (xy 126.5 65.55)
+			)
+		)
+		(filled_polygon
+			(layer "F.SilkS")
+			(island)
+			(pts
+				(xy 127.251 64.799586) (xy 127.251 64.800414) (xy 126.500235 65.55118) (xy 126.499 65.550668) (xy 126.499 64.049332)
+				(xy 126.500235 64.04882)
 			)
 		)
 	)
