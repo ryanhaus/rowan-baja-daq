@@ -2157,6 +2157,16 @@
 		)
 		(uuid "1760c9c0-9604-40e7-832c-6834b8c14222")
 	)
+	(text "Note: pins are in reverse\norder for routing purposes"
+		(exclude_from_sim no)
+		(at 132.842 142.494 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "32d30c9d-acd1-440c-a05e-584c6f6627b4")
+	)
 	(text "All resistors below are 200Ω"
 		(exclude_from_sim no)
 		(at 176.53 117.348 0)
@@ -3124,6 +3134,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "Conn_01x08"
@@ -3221,7 +3232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 130.81 0)
 			(effects
 				(font
@@ -3289,7 +3300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 128.27 0)
 			(effects
 				(font
@@ -3423,7 +3434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 138.43 0)
 			(effects
 				(font
@@ -3701,7 +3712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal"
 			(at 229.87 125.73 0)
 			(effects
 				(font
@@ -3865,7 +3876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 125.73 0)
 			(effects
 				(font
@@ -3998,7 +4009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 133.35 0)
 			(effects
 				(font
@@ -4136,7 +4147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 123.19 0)
 			(effects
 				(font
@@ -4596,7 +4607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 135.89 0)
 			(effects
 				(font
@@ -4862,7 +4873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 171.45 120.65 0)
 			(effects
 				(font
