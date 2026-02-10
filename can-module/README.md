@@ -107,3 +107,14 @@ A SWD-capable interface will be required to program the boards.
 
 > [!NOTE]
 > This is TBD, the boards have not been manufactured yet.
+
+### Connecting to Other Modules
+In order to interface with other devices (i.e., other CAN Modules), they must be wired on the same shared CAN Bus.
+An example layout is shown below:
+
+![CAN Layout Example](assets/example_can_layout.svg)
+
+Note that every module shares the same four wires that are routed throughout the vehicle.
+This topology helps significantly reduce the amount of wire required, time spent routing wire, and helps decentralize devices to minimize single points of failure.
+
+Also note that CAN Bus Modules generally do not exist on their own, they will probably need some other attached device or sensor to either provide or process data on the bus.
