@@ -8,3 +8,6 @@ production
 fabrication-toolkit-options.json
 *.step
 *.stp
+*.gbr
+*.gbrjob
+*.glb
