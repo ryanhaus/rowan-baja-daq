@@ -118,3 +118,5 @@ Note that every module shares the same four wires that are routed throughout the
 This topology helps significantly reduce the amount of wire required, time spent routing wire, and helps decentralize devices to minimize single points of failure.
 
 Also note that CAN Bus Modules generally do not exist on their own, they will probably need some other attached device or sensor to either provide or process data on the bus.
+
+See [here](https://en.wikipedia.org/wiki/CAN_bus) for more info on CAN Bus.
