@@ -3,17 +3,19 @@ The CAN Module is the main building block for the overall Data Acquisition syste
 It is used as an interface between the shared [CAN Bus](https://en.wikipedia.org/wiki/CAN_bus) and each individual sensor or module around the vehicle.
 This document holds all documentation about the components and usage for the CAN Module PCB.
 
+![Screenshot of board](assets/board_iso.png)
+
 ## PCB
 The CAN Module is a 1" x 0.75" printed circuit board (PCB) designed in [KiCad](https://kicad.org). All KiCad files are available in the '[pcb](pcb)' directory.
 
 The board features a [48MHz PIC32 microcontroller](#microcontroller), a [CAN Transceiver](#can-transceiver), [headers for power and CAN communication](#vehicle-interface), as well as [8 GPIO pins](#sensor-interface).
 
 
-Below shows an isographic view and an orthographic top view of the board:
+Below shows an orthographic top and bottom view of the board:
 
 <div align="center">
-    <img src="assets/board_iso.png" width="45%" />
-    <img src="assets/board_top_ortho.png" width="45%" />
+    <img src="assets/board_top_ortho.png" width="49%" />
+    <img src="assets/board_bottom_ortho.png" width="49%" />
 </div>
 
 > [!NOTE]
@@ -98,3 +100,10 @@ The pins are organized as a single 4-pin header.
 > [!WARNING]
 > Ensure that **only two** boards across the entire CAN Bus have this jumper shorted.
 > Also ensure that these two boards exist at each end of the bus, see [here](https://support.maxongroup.com/hc/en-us/articles/360009241840-CAN-bus-topology-and-bus-termination) for more info.
+
+### Programming/Debug Interface
+Two serial-wire debug (SWD) pins are exposed and labelled on the back of the board.
+A SWD-capable interface will be required to program the boards.
+
+> [!NOTE]
+> This is TBD, the boards have not been manufactured yet.
