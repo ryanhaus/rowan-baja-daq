@@ -503,7 +503,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "pmod-adapter.step",
       "svg": "",
       "vrml": ""
     },

@@ -116,7 +116,7 @@
 		(property "Reference" "J3"
 			(at -1.2 -2.525 180)
 			(layer "F.SilkS")
-			(uuid "ef45410c-cefd-4922-a2e5-0f7caa39510c")
+			(uuid "5aa6083c-aa81-4f7c-add1-819389c1d10b")
 			(effects
 				(font
 					(size 0.75 0.75)
@@ -128,7 +128,7 @@
 		(property "Value" "Conn_02x06_Top_Bottom"
 			(at -5.65 15.47 180)
 			(layer "F.Fab")
-			(uuid "61478b30-4566-4663-a5df-435b3abf1775")
+			(uuid "affc7e94-232d-4431-a3be-e3032d707e44")
 			(effects
 				(font
 					(size 1 1)
@@ -140,7 +140,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e65b4ba5-b592-42c4-8f71-0b815c0f5b10")
+			(uuid "031f59a0-daea-4281-a3df-4da92cded956")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -152,7 +152,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0a887e8b-ea99-49c7-adb0-7581768a0a90")
+			(uuid "00efb6b7-9476-4c9e-97aa-076d4e1f00ad")
 			(effects
 				(font
 					(size 1.27 1.27)
