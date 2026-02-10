@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "40cb4209-4f7f-4a38-b0f0-dee54a92ee91")
 	(paper "A4")
+	(title_block
+		(title "CAN Module")
+		(date "2026-02-10")
+		(rev "A")
+		(company "Ryan Hausmann")
+		(comment 1 "Rowan Motorsports")
+	)
 	(lib_symbols
 		(symbol "ATA6560-GBQW-N:ATA6560-GBQW-N"
 			(pin_names
