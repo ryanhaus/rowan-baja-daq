@@ -11,3 +11,4 @@ fabrication-toolkit-options.json
 *.gbr
 *.gbrjob
 *.glb
+fp-info-cache
