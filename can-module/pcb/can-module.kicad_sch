@@ -5130,7 +5130,7 @@
 		)
 	)
 	(global_label "CAN_TX"
-		(shape output)
+		(shape input)
 		(at 210.82 127 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5196,7 +5196,7 @@
 		)
 	)
 	(global_label "CAN_RX"
-		(shape input)
+		(shape output)
 		(at 210.82 134.62 180)
 		(fields_autoplaced yes)
 		(effects
