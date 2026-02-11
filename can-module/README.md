@@ -48,13 +48,13 @@ The boards feature ESD protection diodes on all pins within the vehicle interfac
 The microcontroller on the CAN Module is the [PIC32CM1216JH01048-I/U5B](https://www.digikey.com/en/products/detail/microchip-technology/PIC32CM1216JH01048-I-U5B/25904014), an inexpensive and tiny 32-bit ARM microcontroller that operates at 48MHz with 128KB of flash and 16KB of RAM, as well as an embedded hardware CAN controller.
 See the datasheet [here](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU32/ProductDocuments/DataSheets/PIC32CM-JH00-JH01-Family-Data-Sheet-DS60001632.pdf).
 
-<img src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/6/003/246/870/MFG_150%7EC04-21493%7EM%7E48_web%28640x640%29.jpg?hidebanner=true" width="50%" />
+<img src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/6/003/246/870/MFG_150%7EC04-21493%7EM%7E48_web%28640x640%29.jpg?hidebanner=true" width="20%" />
 
 ### CAN Transceiver
 The CAN Transceiver on the CAN Module is the [ATA6560-GBQW-N](https://www.digikey.com/en/products/detail/microchip-technology/ATA6560-GBQW-N/9453100?s=N4IgTCBcDaIIIBU4DYCsyAMBaA4gIQEUB1LAORAF0BfIA).
 See the datasheet [here](https://ww1.microchip.com/downloads/en/DeviceDoc/20005991B.pdf).
 
-<img src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/238/279/MFG_150%7EC04-21358%7EQ8B%7E8_sml%28200x200%29.jpg" width="50%" />
+<img src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/238/279/MFG_150%7EC04-21358%7EQ8B%7E8_sml%28200x200%29.jpg" width="20%" />
 
 ### Indication LEDs
 There are two indication LEDs present on the CAN Module.
