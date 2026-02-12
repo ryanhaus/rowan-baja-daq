@@ -13,10 +13,10 @@ A screenshot of the schematic is below. A higher-quality pdf is available [here]
 | CAN Module | Comm Unit |
 | ---------- | --------- |
 | A4         | N/C       |
-| A4         | NRST      |
-| A4         | SCK       |
-| A4         | MISO      |
-| A4         | MOSI      |
-| A4         | RFSW      |
-| A4         | BUSY      |
-| A4         | DIO1      |
+| A5         | NRST      |
+| A6         | SCK       |
+| A7         | MISO      |
+| A8         | MOSI      |
+| A9         | RFSW      |
+| A10        | BUSY      |
+| A11        | DIO1      |
