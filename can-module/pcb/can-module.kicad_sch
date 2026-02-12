@@ -3567,7 +3567,7 @@
 		)
 		(uuid "e50f766a-6558-49e4-9cfe-4bebb64a4ee1")
 	)
-	(text "*All TVS diodes are DESD5V0S1BA-7\nunless otherwise noted"
+	(text "*All TVS diodes are DESD5V0U1BA-7\nunless otherwise noted"
 		(exclude_from_sim no)
 		(at 238.252 25.146 0)
 		(effects
@@ -5946,7 +5946,7 @@
 				(justify top)
 			)
 		)
-		(property "Value" "PESD5V0S1BAF"
+		(property "Value" "DESD5V0U1BA-7"
 			(at 224.79 52.0699 90)
 			(effects
 				(font
@@ -7240,7 +7240,7 @@
 				(justify top)
 			)
 		)
-		(property "Value" "PESD5V0S1BAF"
+		(property "Value" "DESD5V0U1BA-7"
 			(at 229.87 52.0699 90)
 			(effects
 				(font
@@ -7717,7 +7717,7 @@
 				(justify top)
 			)
 		)
-		(property "Value" "PESD5V0S1BAF"
+		(property "Value" "DESD5V0U1BA-7"
 			(at 219.71 52.0699 90)
 			(effects
 				(font

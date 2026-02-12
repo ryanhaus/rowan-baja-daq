@@ -613,7 +613,7 @@
 				)
 			)
 		)
-		(property "Value" "PESD5V0S1BAF"
+		(property "Value" "DESD5V0U1BA-7"
 			(at 0.1 1.9 90)
 			(layer "F.Fab")
 			(uuid "6a66860d-64cd-43a4-96d3-739ed4de3f55")
@@ -3395,7 +3395,7 @@
 				)
 			)
 		)
-		(property "Value" "PESD5V0S1BAF"
+		(property "Value" "DESD5V0U1BA-7"
 			(at 0.1 1.9 90)
 			(layer "F.Fab")
 			(uuid "b6589b13-e31e-466c-8315-a2f3db683382")
@@ -6192,7 +6192,7 @@
 				)
 			)
 		)
-		(property "Value" "PESD5V0S1BAF"
+		(property "Value" "DESD5V0U1BA-7"
 			(at 0.1 1.9 90)
 			(layer "F.Fab")
 			(uuid "e66b9852-41d9-4b93-912a-ff943eccbe6e")
