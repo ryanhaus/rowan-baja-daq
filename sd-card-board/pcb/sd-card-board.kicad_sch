@@ -1894,10 +1894,6 @@
 		(uuid "8dbce9fe-358c-474b-8ebb-e4c01ad72f24")
 	)
 	(no_connect
-		(at 76.2 106.68)
-		(uuid "2c6f6f1f-07b4-49e3-abdc-4ef7e8f8b0e7")
-	)
-	(no_connect
 		(at 76.2 121.92)
 		(uuid "70a866a8-4d14-42d0-904d-e56978fc5005")
 	)
@@ -1910,12 +1906,16 @@
 		(uuid "95295b29-7f92-4f9a-ab53-53a3ee36fc6a")
 	)
 	(no_connect
+		(at 76.2 119.38)
+		(uuid "c5e425cc-d0fd-466d-a213-e86f61382f5c")
+	)
+	(no_connect
 		(at 76.2 124.46)
 		(uuid "d29038a6-2ccb-48bf-aaa1-bb8ecaba07cd")
 	)
 	(no_connect
-		(at 76.2 109.22)
-		(uuid "fcabd8f7-51e9-4757-882a-fd94f8daff25")
+		(at 76.2 116.84)
+		(uuid "fe07673a-841a-4426-840a-8b7dc56a6836")
 	)
 	(wire
 		(pts
@@ -1936,6 +1936,16 @@
 			(type default)
 		)
 		(uuid "0f9fe835-5b41-4c80-b01d-a1180c3ad7c5")
+	)
+	(wire
+		(pts
+			(xy 76.2 109.22) (xy 85.09 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "111f5cd2-ee68-403e-8150-5bdf24db3a8b")
 	)
 	(wire
 		(pts
@@ -1966,6 +1976,26 @@
 			(type default)
 		)
 		(uuid "26871a01-1bf9-4dc2-b5a4-c3b8ffbf8c6d")
+	)
+	(wire
+		(pts
+			(xy 76.2 114.3) (xy 85.09 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "299f9a68-0eff-4283-86a8-380c3f32e82a")
+	)
+	(wire
+		(pts
+			(xy 76.2 111.76) (xy 85.09 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d10c08c-8666-4fb8-9dc6-988d4c6ac784")
 	)
 	(wire
 		(pts
@@ -2069,16 +2099,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 114.3) (xy 85.09 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73f7dfa4-5c79-4ba9-b662-a1f2400293ea")
-	)
-	(wire
-		(pts
 			(xy 176.53 63.5) (xy 171.45 63.5)
 		)
 		(stroke
@@ -2149,6 +2169,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 106.68) (xy 85.09 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9811553a-4192-4aaf-a631-eebbaff9cefa")
+	)
+	(wire
+		(pts
 			(xy 194.31 110.49) (xy 201.93 110.49)
 		)
 		(stroke
@@ -2186,16 +2216,6 @@
 			(type default)
 		)
 		(uuid "9e2bb626-2da7-45e4-9c42-304148658cb2")
-	)
-	(wire
-		(pts
-			(xy 76.2 111.76) (xy 85.09 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0af09e1-8623-44e1-af70-af71e62dbd93")
 	)
 	(wire
 		(pts
@@ -2259,16 +2279,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 116.84) (xy 85.09 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c41353f7-2b05-4471-af18-ca61c868ae11")
-	)
-	(wire
-		(pts
 			(xy 201.93 66.04) (xy 201.93 63.5)
 		)
 		(stroke
@@ -2296,16 +2306,6 @@
 			(type default)
 		)
 		(uuid "cd2dc257-ef53-44e7-a31f-05c7c904d76d")
-	)
-	(wire
-		(pts
-			(xy 76.2 119.38) (xy 85.09 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4823522-f0e7-4b96-8a9d-a99d1b29c5c4")
 	)
 	(wire
 		(pts
@@ -2357,8 +2357,8 @@
 		)
 		(uuid "ff58e422-70b7-4f0d-aee5-4ab51a420b43")
 	)
-	(label "MCU_DI"
-		(at 85.09 114.3 180)
+	(label "~{MCU_CS}"
+		(at 85.09 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2366,7 +2366,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "09022fe0-56e0-42bd-b3df-7e856d4e4dc5")
+		(uuid "092295e6-a1af-4713-8442-b76d60c82407")
 	)
 	(label "MCU_CLK"
 		(at 113.03 115.57 0)
@@ -2445,6 +2445,17 @@
 		)
 		(uuid "70a40fff-a485-46dd-8545-9540161c387f")
 	)
+	(label "MCU_CLK"
+		(at 85.09 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "7a9fa1d6-9747-4b79-8b85-d7336c7f9413")
+	)
 	(label "~{SD_CS}"
 		(at 194.31 110.49 0)
 		(effects
@@ -2467,8 +2478,8 @@
 		)
 		(uuid "800c4e69-9950-41a9-960b-8093f0e070bd")
 	)
-	(label "~{MCU_CS}"
-		(at 85.09 111.76 180)
+	(label "MCU_DI"
+		(at 85.09 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2476,7 +2487,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "974e8b23-591b-4899-a30f-1c7e688c4e4c")
+		(uuid "8e25f55b-8fc4-446d-9480-68f9071d2f2a")
 	)
 	(label "SD_CLK"
 		(at 171.45 110.49 180)
@@ -2489,6 +2500,17 @@
 		)
 		(uuid "a9452d88-bfd1-46e9-91de-f2bd20ce3645")
 	)
+	(label "MCU_DO"
+		(at 85.09 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right bottom)
+		)
+		(uuid "af8a0e19-a2ea-4cf4-8dbc-63bc4d0389e7")
+	)
 	(label "SD_DI"
 		(at 194.31 113.03 0)
 		(effects
@@ -2499,28 +2521,6 @@
 			(justify left bottom)
 		)
 		(uuid "b30430e1-da98-43c2-b0b6-3f26da74abf9")
-	)
-	(label "MCU_CLK"
-		(at 85.09 116.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right bottom)
-		)
-		(uuid "d0ae8d4b-d296-4687-9e92-172ce5186683")
-	)
-	(label "MCU_DO"
-		(at 85.09 119.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify right bottom)
-		)
-		(uuid "d6ca70c8-ee76-4c09-a75c-fabab389170e")
 	)
 	(label "SD_DI"
 		(at 171.45 113.03 180)

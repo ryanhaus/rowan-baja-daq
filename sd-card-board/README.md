@@ -16,11 +16,11 @@ A screenshot of the schematic is below, a higher-quality pdf is available [here]
 ## Pins
 | CAN Module | SD Card Board |
 | ---------- | ------------- |
-| A4         | N/C           |
-| A5         | N/C           |
-| A6         | CSn           |
-| A7         | DI            |
-| A8         | CLK           |
-| A9         | DO            |
+| A4         | CSn           |
+| A5         | DI            |
+| A6         | CLK           |
+| A7         | DO            |
+| A8         | N/C           |
+| A9         | N/C           |
 | A10        | N/C           |
 | A11        | N/C           |
