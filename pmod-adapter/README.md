@@ -5,6 +5,11 @@ This helps save time when a single sensor needs to be used and it would be impra
 
 ![Image of board](assets/board_iso.png)
 
+## Schematic
+Screenshot of schematic is below. Higher quality pdf available [here](assets/schematic.pdf).
+
+![Schematic](assets/schematic.png)
+
 ## Mounting to CAN Module
 This board can mount directly onto the sensor interface of the CAN Module via female headers on the bottom of the board.
 Note that, due to size constraints, this board does not feature M2 mounting holes.
