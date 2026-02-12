@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "9ed1dd77-0faf-4866-b0de-a7e9d2ef3672")
 	(paper "A4")
+	(title_block
+		(title "Accelerometer Board")
+		(date "2026-02-12")
+		(rev "A")
+		(company "Ryan Hausmann")
+		(comment 1 "Rowan Motorsports")
+	)
 	(lib_symbols
 		(symbol "BMI323:BMI323"
 			(pin_names
