@@ -10,11 +10,24 @@ Screenshot of schematic is below. Higher quality pdf available [here](assets/sch
 
 ![Schematic](assets/schematic.png)
 
-## Mounting to CAN Module
+## Pins
+| CAN Module | PMOD Adapter |
+| ---------- | ------------ |
+| A4         | PMOD 0       |
+| A5         | PMOD 1       |
+| A6         | PMOD 2       |
+| A7         | PMOD 3       |
+| A8         | PMOD 4       |
+| A9         | PMOD 5       |
+| A10        | PMOD 6       |
+| A11        | PMOD 7       |
+
+## Extra Information
+### Mounting to CAN Module
 This board can mount directly onto the sensor interface of the CAN Module via female headers on the bottom of the board.
 Note that, due to size constraints, this board does not feature M2 mounting holes.
 
-## Changing the Logic Level
+### Changing the Logic Level
 This board supports changing the logic level via a selectable solder bridge on the bottom of the board.
 See the top right in the screenshot below:
 
