@@ -13,7 +13,11 @@ Screenshot of schematic is below. Higher-quality pdf available [here](assets/sch
 ## Pins
 | CAN Module | Accelerometer Board |
 | ---------- | ------------------- |
+| A4         | N/C                 |
+| A5         | N/C                 |
 | A6         | SCL                 |
 | A7         | SDA                 |
 | A8         | Interrupt 1         |
 | A9         | Interrupt 2         |
+| A10        | N/C                 |
+| A11        | N/C                 |
