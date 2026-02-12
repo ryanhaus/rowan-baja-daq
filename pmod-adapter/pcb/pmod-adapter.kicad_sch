@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "776b90a1-72d7-4284-a470-5a835a45ffef")
 	(paper "A4")
+	(title_block
+		(title "PMOD Adapter")
+		(date "2026-02-12")
+		(rev "A")
+		(company "Ryan Hausmann")
+		(comment 1 "Rowan Motorsports")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
