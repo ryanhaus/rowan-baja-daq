@@ -1274,23 +1274,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -9.652 12.954 0)
+			(property "Reference" "U3"
+				(at 0 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Value"
-				(at -7.62 11.176 0)
+			(property "Value" "Wio-SX1262"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Wio-SX1262:Wio-SX1262 PCB Package"
 				(at -5.08 2.54 0)
 				(effects
 					(font
@@ -1317,20 +1317,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "MODULE-WIO-SX1262_0_1"
+			(symbol "MODULE-WIO-SX1262_1_1"
 				(rectangle
 					(start -10.16 10.16)
 					(end 10.16 -12.7)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "MODULE-WIO-SX1262_1_1"
 				(pin passive line
 					(at -12.7 7.62 0)
 					(length 2.54)
