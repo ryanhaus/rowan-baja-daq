@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "77886c5e-2aa2-4e83-9e9b-937f5f7c393c")
 	(paper "A4")
+	(title_block
+		(title "Wireless Communication Unit")
+		(date "2026-02-12")
+		(rev "A")
+		(company "Ryan Hausmann")
+		(comment 1 "Rowan Motorsports")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
