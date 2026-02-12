@@ -960,7 +960,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "U2"
 				(at 20.32 10.16 0)
 				(effects
 					(font
@@ -976,7 +976,7 @@
 					)
 				)
 			)
-			(property "Footprint" "ULTRATHIN_MLP_12L_ONS"
+			(property "Footprint" "FXMAR2104UMX:ULTRATHIN_MLP_12L_ONS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1032,54 +1032,6 @@
 				)
 			)
 			(symbol "FXMAR2104UMX_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -17.78) (xy 33.02 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 -17.78) (xy 33.02 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin power_in line
 					(at 0 0 0)
 					(length 7.62)
@@ -1294,6 +1246,19 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "FXMAR2104UMX_1_1"
+				(rectangle
+					(start 7.62 5.08)
+					(end 33.02 -17.78)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
