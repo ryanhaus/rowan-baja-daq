@@ -3985,6 +3985,12 @@
 		(uuid "ef81b691-c3c1-4ec1-ae3e-32708b67f7e5")
 	)
 	(junction
+		(at 203.2 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b99752b-96b9-4abc-bc48-5a9b7d237ee8")
+	)
+	(junction
 		(at 46.99 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4617,6 +4623,16 @@
 			(type default)
 		)
 		(uuid "491d4e30-1dfb-44e8-b704-38623fc93287")
+	)
+	(wire
+		(pts
+			(xy 203.2 30.48) (xy 203.2 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a17ffe1-f7ec-4f81-81a4-317fe38d0a7e")
 	)
 	(wire
 		(pts
@@ -6931,7 +6947,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "240cf5fd-1745-4748-bb17-27656729a6c1")
-		(property "Reference" "IC1"
+		(property "Reference" "U1"
 			(at 157.226 160.528 0)
 			(effects
 				(font
@@ -7198,7 +7214,7 @@
 		(instances
 			(project ""
 				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
-					(reference "IC1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -8498,6 +8514,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64e4f6ff-70d0-4538-b912-cdc6f8db5b25")
+		(property "Reference" "TP1"
+			(at 204.978 27.686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 205.74 28.4479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 208.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 203.2 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e6fd014-afb9-4c42-b815-1ee0235b2de4")
+		)
+		(instances
+			(project ""
+				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 270.51 111.76 0)
 		(unit 1)
@@ -9382,7 +9465,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 251.46 31.75 0)
+		(at 251.46 34.29 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9390,7 +9474,7 @@
 		(dnp no)
 		(uuid "8f7f7bdb-921b-464b-832b-4682ba2aa413")
 		(property "Reference" "J1"
-			(at 249.428 43.942 0)
+			(at 249.174 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9398,7 +9482,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 250.825 44.45 0)
+			(at 250.825 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,7 +9491,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
-			(at 251.46 31.75 0)
+			(at 251.46 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9416,7 +9500,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 251.46 31.75 0)
+			(at 251.46 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9425,7 +9509,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 251.46 31.75 0)
+			(at 251.46 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10689,7 +10773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6511c45-f61b-4f4a-9ce6-f1b347118711")
-		(property "Reference" "IC2"
+		(property "Reference" "U3"
 			(at 167.64 25.4 0)
 			(effects
 				(font
@@ -10825,7 +10909,7 @@
 		(instances
 			(project ""
 				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
-					(reference "IC2")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -10841,7 +10925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7c34015-9e35-441b-8785-f653e0f65c27")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 231.14 101.6 0)
 			(effects
 				(font
@@ -10916,7 +11000,7 @@
 		(instances
 			(project ""
 				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
