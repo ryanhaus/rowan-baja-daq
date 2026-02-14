@@ -4,4 +4,5 @@
   (lib (name "ATA6560-GBQW-N")(type "KiCad")(uri "${KIPRJMOD}/lib/ATA6560-GBQW-N/footprints.pretty")(options "")(descr ""))
   (lib (name "SolderJumperSmall")(type "KiCad")(uri "${KIPRJMOD}/lib/SolderJumperSmall/SolderJumperSmall.pretty")(options "")(descr ""))
   (lib (name "Logos")(type "KiCad")(uri "${KIPRJMOD}/lib/Logos")(options "")(descr ""))
+  (lib (name "NID5100GWH")(type "KiCad")(uri "${KIPRJMOD}/lib/NID5100GWH")(options "")(descr ""))
 )

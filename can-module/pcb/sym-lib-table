@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "PIC32CM1216JH01048-I/U5B")(type "KiCad")(uri "${KIPRJMOD}/lib/PIC32CM1216JH01048-I_U5B/PIC32CM1216JH01048-I_U5B.kicad_sym")(options "")(descr ""))
   (lib (name "ATA6560-GBQW-N")(type "KiCad")(uri "${KIPRJMOD}/lib/ATA6560-GBQW-N/2025-10-02_15-15-26.kicad_sym")(options "")(descr ""))
+  (lib (name "NID5100GWH")(type "KiCad")(uri "${KIPRJMOD}/lib/NID5100GWH/NID5100GWH.kicad_sym")(options "")(descr ""))
 )
