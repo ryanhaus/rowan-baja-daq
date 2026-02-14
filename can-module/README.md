@@ -39,10 +39,8 @@ The boards should be powered with +5V DC through the appropriate pins in the [ve
 
 The total power consumption depends on attached sensors and modules, but 100-200 mA at most will be consumed by the board itself during peak power usage.
 
-The boards feature ESD protection diodes on all pins within the vehicle interface.
-
-> [!CAUTION]
-> These boards were designed with cost as a heavy constraint. As such, some features, such as reverse polarity protection, are not present on the boards themselves. These boards, as per Baja SAE rules, should be externally fused, and caution should be taken to ensure that power is properly connected and does not exceed +5V.
+> [!NOTE]
+> The boards feature reverse polarity protection, a resettable fuse, and ESD protection diodes on all pins within the vehicle interface.
 
 ### Microcontroller
 The microcontroller on the CAN Module is the [PIC32CM1216JH01048-I/U5B](https://www.digikey.com/en/products/detail/microchip-technology/PIC32CM1216JH01048-I-U5B/25904014), an inexpensive and tiny 32-bit ARM microcontroller that operates at 48MHz with 128KB of flash and 16KB of RAM, as well as an embedded hardware CAN controller.
