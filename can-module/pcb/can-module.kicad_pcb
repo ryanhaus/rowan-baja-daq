@@ -2469,7 +2469,7 @@
 		(descr "SOT363-2_2024")
 		(tags "Integrated Circuit")
 		(property "Reference" "U3"
-			(at 0 2 270)
+			(at 0 2 90)
 			(layer "F.SilkS")
 			(uuid "0aed2bc3-37f5-4326-9337-b52fe4a036e4")
 			(effects
@@ -2818,15 +2818,15 @@
 			(uuid "8517f10e-82b4-464b-b720-d0537493fae7")
 		)
 		(embedded_fonts no)
-		(model "NID5100GWH.stp"
+		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
 			(offset
-				(xyz -1.629999971 -0.9399999835 -0.7300000081)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -90)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
