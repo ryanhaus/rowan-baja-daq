@@ -8474,7 +8474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoints:TestPoint_Pad_D1.0mm_TightSpacing"
 			(at 134.62 76.2 0)
 			(effects
 				(font
@@ -8952,7 +8952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoints:TestPoint_Pad_D1.0mm_TightSpacing"
 			(at 208.28 30.48 0)
 			(effects
 				(font
@@ -10392,7 +10392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoints:TestPoint_Pad_D1.0mm_TightSpacing"
 			(at 137.16 76.2 0)
 			(effects
 				(font
