@@ -19,9 +19,8 @@ Below shows an orthographic top and bottom view of the board:
 </div>
 
 > [!NOTE]
-> If more than 8 GPIO pins are required for a particular sensor or module, an I2C GPIO expander or larger custom board design can be used.
-> The CAN Module was designed to be as inexpensive as possible while still retaining a reasonable amount of features, so it does not cover every case.
-> It is compatible with any CAN-FD compatible device that communicates at 5V, so options for improvements or substitutes are far from limited.
+> If more than 8 GPIO pins are required for a particular sensor or module, an I2C GPIO expander can be used, or wires can be soldered to one of the exposed GPIO test points (see [here](#extra-gpios)).
+> Alternatively, a larger custom board can be designed, these modules are able to communicate with any CAN-FD compatible device that communicates with a 5V logic level.
 
 ### Schematic
 A schematic of the CAN Module is shown below.
@@ -98,6 +97,22 @@ The pins are organized as a single 4-pin header.
 > [!WARNING]
 > Ensure that **only two** boards across the entire CAN Bus have this jumper shorted.
 > Also ensure that these two boards exist at each end of the bus, see [here](https://support.maxongroup.com/hc/en-us/articles/360009241840-CAN-bus-topology-and-bus-termination) for more info.
+
+#### Extra GPIOs
+13 extra GPIO pins are exposed from the microcontroller and can be used.
+See the screenshot below to see all labelled test points.
+
+<div align="center">
+    <img src="assets/board_top_labelled_test_points.png" width="50%" />
+</div>
+
+> [!NOTE]
+> All GPIO test points are exposed from Port A, so it is not explicitly labelled in the screenshot.
+> For example, the point labelled '13' maps to PA13, '14' to PA14, etc.
+
+> [!NOTE]
+> In addition to GPIOs, there is also a test point for +5V.
+> This test point is after all power filtering & fusing, so it may be helpful for debugging power issues.
 
 ### Programming/Debug Interface
 Two serial-wire debug (SWD) pins are exposed and labelled on the back of the board.
