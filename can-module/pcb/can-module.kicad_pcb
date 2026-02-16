@@ -653,6 +653,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
+		(path "/ee05c7b8-f84d-4211-9a40-71cad6151853")
+		(sheetname "/")
+		(sheetfile "can-module.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -1736,6 +1740,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
+		(path "/1f39445b-7ffc-45a6-adfc-3fcd1af5f1ac")
+		(sheetname "/")
+		(sheetfile "can-module.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -4528,6 +4536,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
+		(path "/8e39aba7-7bb6-49c3-b2fd-0de8537647f5")
+		(sheetname "/")
+		(sheetfile "can-module.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -4537,7 +4549,6 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(net 1)
 			(uuid "b244b947-1c65-4713-95b7-82fd9bea90a0")
 		)
 		(fp_line
@@ -4548,7 +4559,6 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(net 1)
 			(uuid "6e5e7b68-6c0f-4a70-bbd0-594b6112e0b7")
 		)
 		(fp_line
@@ -4559,7 +4569,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1)
 			(uuid "2d95e4b5-d1dc-4b72-ace4-b0e085533ddf")
 		)
 		(fp_line
@@ -4570,7 +4579,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1)
 			(uuid "616a39cf-b3f9-450d-b2fb-21fa6f28045a")
 		)
 		(fp_line
@@ -4581,7 +4589,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1)
 			(uuid "5f41bb15-02cd-452a-bb69-572d54c8eb78")
 		)
 		(fp_line
@@ -4592,7 +4599,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1)
 			(uuid "ed9563f0-7ef8-46ed-8429-7ef3be4ed174")
 		)
 		(fp_line
@@ -4603,7 +4609,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1)
 			(uuid "ba27a967-41b9-4f96-9f74-82e633e838b2")
 		)
 		(fp_line
@@ -4614,7 +4619,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1)
 			(uuid "6ca0bd19-94a3-4331-ba9d-324e76d3f6cf")
 		)
 		(fp_line
@@ -4625,7 +4629,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1)
 			(uuid "60edeb3a-6c62-439c-a3c5-0ad80594b339")
 		)
 		(fp_line
@@ -4636,7 +4639,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1)
 			(uuid "18bb9467-0eb8-4635-97e9-80aad9968f43")
 		)
 		(fp_text user "${REFERENCE}"
@@ -5076,6 +5078,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
+		(path "/8894abba-7b16-497b-a011-caa88064f498")
+		(sheetname "/")
+		(sheetfile "can-module.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -5085,7 +5091,6 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(net 1845257880)
 			(uuid "9d48f8e5-2493-4ef3-9482-b3e51b671443")
 		)
 		(fp_line
@@ -5096,7 +5101,6 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(net 1845257880)
 			(uuid "4cbe4487-11d3-4e0a-a097-9378369c036e")
 		)
 		(fp_line
@@ -5107,7 +5111,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1845257880)
 			(uuid "38663afe-fb42-4623-9165-8f53abd4cb49")
 		)
 		(fp_line
@@ -5118,7 +5121,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1845257880)
 			(uuid "00caf4bb-7790-4370-aa3e-25f00abcf90f")
 		)
 		(fp_line
@@ -5129,7 +5131,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1845257880)
 			(uuid "5dbf898c-40e0-4adc-982b-20bd99e7d0f4")
 		)
 		(fp_line
@@ -5140,7 +5141,6 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(net 1845257880)
 			(uuid "0158e3b9-f515-4b6c-a218-c1b9199ba086")
 		)
 		(fp_line
@@ -5151,7 +5151,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1845257880)
 			(uuid "9873794e-4745-48a9-bfed-bf56f13e6f35")
 		)
 		(fp_line
@@ -5162,7 +5161,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1845257880)
 			(uuid "ab5cd50c-e0c5-4db4-a230-b832c81c6eb7")
 		)
 		(fp_line
@@ -5173,7 +5171,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1845257880)
 			(uuid "18d0b975-4d02-4f4f-a527-4e9f93cdc8df")
 		)
 		(fp_line
@@ -5184,7 +5181,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 1845257880)
 			(uuid "08962f34-c56a-45f4-b506-18a37a384fe0")
 		)
 		(fp_text user "${REFERENCE}"
