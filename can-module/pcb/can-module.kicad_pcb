@@ -10876,6 +10876,19 @@
 			)
 		)
 	)
+	(gr_text "V_{IO}"
+		(at 115.75 50.1 180)
+		(layer "F.SilkS")
+		(uuid "40555a7e-b847-4364-8285-6b8edbfab55d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify right)
+		)
+	)
 	(gr_text "+"
 		(at 137.2 57.120001 90)
 		(layer "F.SilkS")
