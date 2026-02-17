@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CAN Module")
-		(date "2026-02-15")
+		(date "2026-02-17")
 		(rev "A")
 		(company "Ryan Hausmann")
 		(comment 1 "Rowan Motorsports")
