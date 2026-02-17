@@ -4695,7 +4695,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 176.53) (xy 142.24 179.07)
+			(xy 142.24 176.53) (xy 142.24 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5625,6 +5625,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 189.23) (xy 142.24 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca574df4-59e2-4510-b837-071b00e5cf45")
+	)
+	(wire
+		(pts
 			(xy 252.73 99.06) (xy 255.27 99.06)
 		)
 		(stroke
@@ -5815,16 +5825,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 184.15) (xy 142.24 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e820e696-3439-4165-9693-9700a657f6b2")
-	)
-	(wire
-		(pts
 			(xy 132.08 36.83) (xy 134.62 36.83)
 		)
 		(stroke
@@ -5852,6 +5852,16 @@
 			(type default)
 		)
 		(uuid "ef9d5dd9-88c8-4176-9860-8b5cb268adb6")
+	)
+	(wire
+		(pts
+			(xy 142.24 189.23) (xy 142.24 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efdffc00-7b02-43fe-bed0-621c3faa4762")
 	)
 	(wire
 		(pts
@@ -6465,7 +6475,8 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 142.24 181.61 90)
+		(at 142.24 184.15 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6473,7 +6484,7 @@
 		(dnp no)
 		(uuid "080cb0f5-da59-4d07-bf03-e6fb93a774f9")
 		(property "Reference" "D5"
-			(at 139.7 180.2764 90)
+			(at 139.7 185.4836 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6482,7 +6493,7 @@
 			)
 		)
 		(property "Value" "LTST-C170GKT"
-			(at 139.7 182.8164 90)
+			(at 139.7 182.9436 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6491,7 +6502,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 142.24 181.61 90)
+			(at 142.24 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6511,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 181.61 90)
+			(at 142.24 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6520,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 142.24 181.61 0)
+			(at 142.24 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +6529,7 @@
 			)
 		)
 		(property "Sim.Pin" "1=K 2=A"
-			(at 142.24 181.61 0)
+			(at 142.24 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6533,7 +6544,7 @@
 			(uuid "514867f1-75bb-485d-8b76-db07562c0b81")
 		)
 		(instances
-			(project ""
+			(project "can-module"
 				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
 					(reference "D5")
 					(unit 1)
@@ -11457,72 +11468,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 186.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5ffa2ae-0731-4721-8e38-b0a619476c12")
-		(property "Reference" "#PWR046"
-			(at 142.24 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 191.262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c424bf13-b40d-47c3-9b08-37d3e8924e9c")
-		)
-		(instances
-			(project "can-module"
-				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 58.42 135.89 0)
 		(unit 1)
@@ -12897,6 +12842,73 @@
 			(project "can-module"
 				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 144.78 189.23 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5b9fa26-cd9d-40b0-963d-4f3598fd1282")
+		(property "Reference" "#PWR013"
+			(at 140.97 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 148.59 189.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 144.78 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0197212c-61f5-4c24-9a68-453537a58cb6")
+		)
+		(instances
+			(project "can-module"
+				(path "/40cb4209-4f7f-4a38-b0f0-dee54a92ee91"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
