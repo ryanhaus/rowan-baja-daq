@@ -125,7 +125,7 @@ However, the resistor can be moved over to bridge the 3.3V supply to VDD<sub>IO<
     <img src="assets/board_top_labelled_gpio_voltage_selector.png" width="75%" />
 </div>
 
-> ![NOTE]
+> [!NOTE]
 > Note that this only affects the microcontroller GPIOs.
 > CAN communication will still occur at 5V.
 > Additionally, changing the IO voltage will change the voltage that SWD communicates at.
