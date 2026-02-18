@@ -65,7 +65,7 @@ Each LED has 5V at the anode.
 ### Pins & Connectors
 All pins on the CAN Module operate at 5V logic levels by default.
 The GPIO pins can be operated at 3.3V as well, see [here](#gpio-voltage-selection).
-There are two distinct sets of pins on the board that serve different purposes, the sensor interface, and the vehicle interface, as described and labelled below.
+There are two distinct sets of pins on the board that serve different purposes, the sensor interface and the vehicle interface, as described and labelled below.
 
 <div align="center">
     <img src="assets/board_top_labelled_pin_interface.png" width="50%" />
@@ -81,7 +81,7 @@ These pins are intended to provide power to and communicate with some sensor or 
 There are two distinct pin headers in the sensor interface, one being 2 pins, and the other being 8 pins.
 These are the output power and communication headers, respectively.
 
-The output power header has a +5V output pin and GND pin, which is labelled appropriately on the board.
+The output power header has positive (VDD<sub>IO</sub>) and negative (GND), which is labelled appropriately on the board.
 
 The communication header has 8 GPIO pins which are directly connected to GPIO pins on the [microcontroller](#microcontroller).
 The pins included in this header include GPIO pins PA4 through PA11 from the microcontroller in sequential order, as labelled on the board.
