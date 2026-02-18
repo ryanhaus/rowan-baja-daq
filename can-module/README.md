@@ -100,14 +100,6 @@ These pins are intended to provide power to the CAN Module board and allow for c
 
 The pins are organized as a single 4-pin header.
 
-> [!NOTE]
-> Near the vehicle interface is a solder jumper labelled J<sub>RCAN</sub>.
-> This jumper is not bridged by default, and, when bridged, will allow the board to act as a bus terminator for the CAN Bus, bridging a 120Ω resistance (as well as a 4.7nF capacitor for noise suppression) across CANH and CANL.
-
-> [!WARNING]
-> Ensure that **only two** boards across the entire CAN Bus have this jumper shorted.
-> Also ensure that these two boards exist at each end of the bus, see [here](https://support.maxongroup.com/hc/en-us/articles/360009241840-CAN-bus-topology-and-bus-termination) for more info.
-
 #### Extra GPIOs
 13 extra GPIO pins are exposed from the microcontroller and can be used.
 See the screenshot below to see all labelled test points.
@@ -161,3 +153,6 @@ This topology helps significantly reduce the amount of wire required, time spent
 Also note that CAN Bus Modules generally do not exist on their own, they will probably need some other attached device or sensor to either provide or process data on the bus.
 
 See [here](https://en.wikipedia.org/wiki/CAN_bus) for more info on CAN Bus.
+
+> [!WARNING]
+> Make sure that the CAN bus is properly terminated, see [here](https://support.maxongroup.com/hc/en-us/articles/360009241840-CAN-bus-topology-and-bus-termination) for more info.
