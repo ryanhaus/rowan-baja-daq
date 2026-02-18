@@ -128,7 +128,6 @@ However, the resistor can be moved over to bridge the 3.3V supply to VDD<sub>IO<
 > [!NOTE]
 > Note that this only affects the microcontroller GPIOs.
 > CAN communication will still occur at 5V.
-> Additionally, changing the IO voltage will change the voltage that SWD communicates at.
 
 #### Programming/Debug Pins
 Two serial-wire debug (SWD) pins are exposed and labelled on the back of the board.
