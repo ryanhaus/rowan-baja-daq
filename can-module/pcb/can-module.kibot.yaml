@@ -1,0 +1,37 @@
+kibot:
+  version: 1
+
+preflight:
+  drc:
+
+outputs:
+  - name: "iso"
+    comment: "Isographic view of PCB"
+    type: "render_3d"
+    dir: "../assets"
+    options:
+      output: "board_iso.%x"
+      rotate_x: 3
+      rotate_y: -2
+      rotate_z: 2
+      move_y: 1
+      auto_crop: true
+
+  - name: "top_ortho"
+    comment: "Top orthographic render of PCB"
+    type: "render_3d"
+    dir: "../assets"
+    options:
+      orthographic: true
+      auto_crop: true
+      output: "board_top_ortho.%x"
+
+  - name: "bottom_ortho"
+    comment: "Bottom orthographic render of PCB"
+    type: "render_3d"
+    dir: "../assets"
+    options:
+      orthographic: true
+      auto_crop: true
+      view: "bottom"
+      output: "board_bottom_ortho.%x"
