@@ -25,12 +25,12 @@ Below shows an orthographic top and bottom view of the board:
 A schematic of the CAN Module is shown below.
 Higher-quality pdf available [here](assets/schematic.pdf).
 
-![Schematic](assets/schematic.png)
+![Schematic](assets/schematic.svg)
 
 ### Dimensions
 The dimensions below may be of use for designing custom enclosures or daughterboards to be mounted to the CAN Module.
 All dimensions are in mm, and the mounting holes are M2. Additionally, the pin headers have 0.05" (1.27mm) hole spacing.
-![Dimensions of board](assets/board_dimensions.png)
+![Dimensions of board](assets/board_dimensions.svg)
 
 ### Power Requirements
 The boards should be powered with +5V DC through the appropriate pins in the [vehicle interface](#vehicle-interface).
@@ -39,10 +39,6 @@ The total power consumption depends on attached sensors and modules, but 100-200
 
 > [!NOTE]
 > The boards feature reverse polarity protection, a resettable fuse, and ESD protection diodes on all pins within the vehicle interface.
-
-> [!WARNING]
-> Even if 3.3V GPIO logic is required, the supply voltage should still be 5V to ensure CAN communication works.
-> See [here](#gpio-voltage-selection).
 
 ### Microcontroller
 The microcontroller on the CAN Module is the [PIC32CM1216JH01048-I/U5B](https://www.digikey.com/en/products/detail/microchip-technology/PIC32CM1216JH01048-I-U5B/25904014), an inexpensive and tiny 32-bit ARM microcontroller that operates at 48MHz with 128KB of flash and 16KB of RAM, as well as an embedded hardware CAN controller.
@@ -64,7 +60,6 @@ Each LED has 5V at the anode.
 
 ### Pins & Connectors
 All pins on the CAN Module operate at 5V logic levels by default.
-The GPIO pins can be operated at 3.3V as well, see [here](#gpio-voltage-selection).
 There are two distinct sets of pins on the board that serve different purposes, the sensor interface and the vehicle interface, as described and labelled below.
 
 <div align="center">
@@ -81,7 +76,7 @@ These pins are intended to provide power to and communicate with some sensor or 
 There are two distinct pin headers in the sensor interface, one being 2 pins, and the other being 8 pins.
 These are the output power and communication headers, respectively.
 
-The output power header has positive (VDD<sub>IO</sub>) and negative (GND), which is labelled appropriately on the board.
+The output power header has a positive pin (+5V) and a negative pin (GND), which is labelled appropriately on the board.
 
 The communication header has 8 GPIO pins which are directly connected to GPIO pins on the [microcontroller](#microcontroller).
 The pins included in this header include GPIO pins PA4 through PA11 from the microcontroller in sequential order, as labelled on the board.
@@ -91,8 +86,10 @@ These pins were selected because every one of them is capable of acting as a com
 > These pins do not have ESD diodes, series resistors, or short circuit protection (other than what is provided by the microcontroller's GPIO pins).
 
 > [!NOTE]
-> These pins operate at 5V by default.
-> They can also be configured to operate at 3.3V, see [here](#gpio-voltage-selection).
+> Some of these pins are powered by AVDD and some are powered by VDD<sub>IO</sub>.
+> While VDD<sub>IO</sub> can be changed to 3.3V to use 3.3V logic, AVDD must remain 5V.
+> A future revision of this board could take this into consideration and only expose pins powered by VDD<sub>IO</sub>, so that 3.3V logic can be achieved without external logic level converters.
+> Another solution could be to power the entire chip by 3.3V and use an ATA6561 instead of the ATA6560, since the former is able to communicate with 3.3V microcontrollers.
 
 #### Vehicle Interface
 The vehicle interface is the set of 2 communication and 2 input power pins located on the right side of the board.
@@ -116,29 +113,12 @@ See the screenshot below to see all labelled test points.
 > In addition to GPIOs, there is also a test point for +5V.
 > This test point is after all power filtering & fusing, so it may be helpful for debugging power issues.
 
-#### GPIO Voltage Selection
-A 0-ohm resistor seleciton labelled V<sub>IO</sub> can be used to select the GPIO voltage.
-By default, the resistor bridges the 5V supply to VDD<sub>IO</sub>.
-However, the resistor can be moved over to bridge the 3.3V supply to VDD<sub>IO</sub>, allowing the CAN module to communicate with sensors and devices that operate at 3.3V logic levels.
-
-<div align="center">
-    <img src="assets/board_top_labelled_gpio_voltage_selector.png" width="75%" />
-</div>
-
-> [!NOTE]
-> Note that this only affects the microcontroller GPIOs.
-> CAN communication will still occur at 5V.
-
 #### Programming/Debug Pins
 Two serial-wire debug (SWD) pins are exposed and labelled on the back of the board.
 A SWD-capable interface will be required to program the boards.
 
 > [!NOTE]
 > This is TBD, the boards have not been manufactured yet.
-
-> [!WARNING]
-> The SWD pins will operate at the same voltage as the rest of the GPIO.
-> See [here](#gpio-voltage-selection).
 
 ### Connecting to Other Modules
 In order to interface with other devices (i.e., other CAN Modules), they must be wired on the same shared CAN Bus.
