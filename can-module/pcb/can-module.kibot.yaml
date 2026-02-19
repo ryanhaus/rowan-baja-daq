@@ -51,3 +51,19 @@ outputs:
     options:
       background_color: true
       output: "schematic.%x"
+
+  - name: "dimensions_svg"
+    comment: "SVG including dimensions"
+    type: "pcb_print"
+    dir: "../assets"
+    options:
+      plot_sheet_reference: false
+      add_background: true
+      format: "SVG"
+      scaling: 0
+      output: "board_dimensions.%x"
+      pages:
+        - layers:
+          - "Edge.Cuts"
+          - "User.1"
+          - "F.Courtyard"
