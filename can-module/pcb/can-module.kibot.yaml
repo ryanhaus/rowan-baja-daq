@@ -36,9 +36,17 @@ outputs:
       view: "bottom"
       output: "board_bottom_ortho.%x"
 
-  - name: "schematic"
+  - name: "schematic_svg"
     comment: "SVG image of schematic"
     type: "svg_sch_print"
+    dir: "../assets"
+    options:
+      background_color: true
+      output: "schematic.%x"
+
+  - name: "schematic_pdf"
+    comment: "PDF of schematic"
+    type: "pdf_sch_print"
     dir: "../assets"
     options:
       background_color: true
