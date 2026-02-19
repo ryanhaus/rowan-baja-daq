@@ -12,3 +12,4 @@ fabrication-toolkit-options.json
 *.gbrjob
 *.glb
 fp-info-cache
+*-drc*
