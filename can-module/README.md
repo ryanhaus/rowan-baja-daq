@@ -135,3 +135,14 @@ See [here](https://en.wikipedia.org/wiki/CAN_bus) for more info on CAN Bus.
 
 > [!WARNING]
 > Make sure that the CAN bus is properly terminated, see [here](https://support.maxongroup.com/hc/en-us/articles/360009241840-CAN-bus-topology-and-bus-termination) for more info.
+
+## Updating This Project
+After changes are made to the project, [KiBot](https://github.com/INTI-CMNB/KiBot) (must be installed) can be used to automatically create renders of the schematic and PCB used in this documentation.
+
+Navigate to the `pcb` directory, and run the following:
+```sh
+$ kibot
+```
+
+This command will automatically run the DRC and generate renders.
+See [`can-module.kibot.yaml`](pcb/can-module.kibot.yaml) for the configuration.
