@@ -35,3 +35,11 @@ outputs:
       auto_crop: true
       view: "bottom"
       output: "board_bottom_ortho.%x"
+
+  - name: "schematic"
+    comment: "SVG image of schematic"
+    type: "svg_sch_print"
+    dir: "../assets"
+    options:
+      background_color: true
+      output: "schematic.%x"
