@@ -163,8 +163,8 @@ You will need the following:
 To build, run the following:
 
 ```sh
-$ cmake -B bin # only required for first build, or after editing CMakeLists.txt
-$ cmake --build bin # required every build
+$ cmake -B bin # Generates CMake files
+$ cmake --build bin # Actually builds the targets
 ```
 
 This will create build files and compile the target programs in the `bin` directory.
