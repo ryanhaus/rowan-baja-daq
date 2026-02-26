@@ -163,7 +163,7 @@ You will need the following:
 To build, run the following:
 
 ```sh
-$ cmake -B bin # Generates CMake files
+$ cmake -B bin # Generates CMake files, generally only needed once (unless you edit or add new CMake configs)
 $ cmake --build bin # Actually builds the targets
 ```
 
