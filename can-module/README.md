@@ -146,3 +146,25 @@ $ kibot
 
 This command will automatically run the DRC and generate renders.
 See [`can-module.kibot.yaml`](pcb/can-module.kibot.yaml) for the configuration.
+
+## Software
+The software is written in the C programming language, and uses CMake as the build tool.
+
+> [!NOTE]
+> This has only been tested on Linux, unknown if it will work on Windows/Mac.
+> If it doesn't work on Windows, you could try using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+### Prerequisites
+You will need the following:
+ - [CMake 3.23+](https://cmake.org/download/)
+ - [XC32 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc32)
+
+### Building
+To build, run the following:
+
+```sh
+$ cmake -B bin # only required for first build, or after editing CMakeLists.txt
+$ cmake --build bin # required every build
+```
+
+This will create build files and compile the target programs in the `bin` directory.
