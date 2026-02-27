@@ -1,4 +1,4 @@
-set(TARGET_NAME test_target1)
+set(TARGET_NAME test_target)
 
 add_executable(${TARGET_NAME}
     main.c

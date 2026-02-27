@@ -1,4 +1,4 @@
 #pragma once
 
-int test_function(int, int);
-int test_function2(int, int);
+int test_function_add(int, int);
+int test_function_sub(int, int);
