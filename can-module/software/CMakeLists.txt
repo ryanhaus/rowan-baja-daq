@@ -7,6 +7,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 # Add shared libraries
 add_subdirectory(lib)
 
+# Add tests
+enable_testing()
+add_subdirectory(tests)
+
 # Auto-discover targets
 file(GLOB TARGET_DIRS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/targets
      ${CMAKE_CURRENT_SOURCE_DIR}/targets/*)

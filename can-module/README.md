@@ -156,8 +156,18 @@ The software is written in the C programming language, and uses CMake as the bui
 
 ### Prerequisites
 You will need the following:
- - [CMake 3.23+](https://cmake.org/download/)
+ - [CMake](https://cmake.org/download/)
  - [XC32 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc32)
+ - [Criterion](https://github.com/Snaipe/Criterion)
+ - [pkg-config](https://gitlab.freedesktop.org/pkg-config/pkg-config)
+
+#### Quickstart on Linux
+The following command can be used to install the required packages on Ubuntu 24.04+.
+**Note that the XC32 compiler must be downloaded and installed separately from the vendor, see link above.**
+
+```sh
+$ sudo apt install cmake libcriterion-dev pkg-config
+```
 
 ### Building
 To build, run the following:
@@ -168,3 +178,11 @@ $ cmake --build bin # Actually builds the targets
 ```
 
 This will create build files and compile the target programs in the `bin` directory.
+
+### Running Tests
+This project uses the Criterion testing library, which can be ran using CTest (included with CMake).
+To run tests, run the following:
+
+```sh
+$ ctest --test-dir bin
+```
