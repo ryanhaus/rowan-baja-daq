@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.23)
 project(can-module)
 
+# For file discovery in nvim
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Put all executables in the bin directory, not their own separate ones
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
