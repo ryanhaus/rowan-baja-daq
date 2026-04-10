@@ -11,8 +11,10 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_subdirectory(lib)
 
 # Add tests
-enable_testing()
-add_subdirectory(tests)
+if (BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
 
 # Auto-discover targets
 file(GLOB TARGET_DIRS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/targets
