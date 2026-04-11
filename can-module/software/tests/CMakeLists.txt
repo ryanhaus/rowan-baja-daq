@@ -1,3 +1,12 @@
+cmake_minimum_required(VERSION 3.23)
+project(can-module-tests)
+
+# Add targets and libraries (not incl. vendor files)
+add_subdirectory(../lib ${CMAKE_CURRENT_BINARY_DIR}/lib)
+
+# Handle tests
+enable_testing()
+
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(CRITERION REQUIRED IMPORTED_TARGET criterion)
 
