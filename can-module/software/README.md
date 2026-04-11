@@ -9,7 +9,7 @@ The software is written in the C programming language, and uses CMake as the bui
 You will need the following:
  - [CMake](https://cmake.org/download/)
  - [XC32 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc32) (for firmware only)
- - [MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) (for firmware only)
+ - [MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) (for [creating new vendor libraries](/can-module/software/vendor/mplab/README.md#creating-new-folders) only)
  - [Criterion](https://github.com/Snaipe/Criterion) (for tests only)
  - [pkg-config](https://gitlab.freedesktop.org/pkg-config/pkg-config) (for tests only)
 
