@@ -45,3 +45,16 @@ To run tests, run the following:
 ```sh
 $ ctest --test-dir bin
 ```
+
+## Flashing to hardware
+### Debugger
+I used the [MPLAB SNAP](https://www.microchip.com/en-us/development-tool/pg164100) programmer/debugger connected to the SWD pins on the CAN module.
+
+See Table 3.3.1 in the [user manual](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/UserGuides/MPLAB-Snap-In-Circuit-Debugger-User-Guide-50002787.pdf) to see the pinout needed for SWD. 
+
+Note that the MPLAB SNAP will **not** provide power to the CAN Module, and it needs a voltage reference (5V) connected to the VDD pin. I made a simple wire harness to connect a +5V source to the VDD pin on the MPLAB SNAP and the +5V pin on the CAN Module, as well as connect all grounds. I also added wires to connect the SWDIO and SWCLK pins together between the MPLAB SNAP and CAN Module.
+
+### How to flash
+I used the MPLAB IPE software to flash the generated hex file in the `bin` directory to the microcontroller.
+
+Simply select the device as a `PIC32CM1216JH01048`, select the hex file for the target (located in `bin` as `[name].hex`), then click 'Program'.
