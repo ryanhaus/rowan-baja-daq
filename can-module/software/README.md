@@ -9,12 +9,13 @@ The software is written in the C programming language, and uses CMake as the bui
 You will need the following:
  - [CMake](https://cmake.org/download/)
  - [XC32 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc32) (for firmware only)
+ - [MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) (for firmware only)
  - [Criterion](https://github.com/Snaipe/Criterion) (for tests only)
  - [pkg-config](https://gitlab.freedesktop.org/pkg-config/pkg-config) (for tests only)
 
 ### Quickstart on Linux
 The following command can be used to install the required packages on Ubuntu 24.04+.
-**Note that the XC32 compiler must be downloaded and installed separately from the vendor, see link above.**
+**Note that the XC32 compiler and MPLAB X IDE must be downloaded and installed separately from the vendor, see links above.**
 
 ```sh
 $ sudo apt install cmake libcriterion-dev pkg-config
