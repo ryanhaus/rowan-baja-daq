@@ -1,20 +1,27 @@
 /*******************************************************************************
-  System Definitions
+  CAN Peripheral Library Interface Header File
+
+  Company:
+    Microchip Technology Inc.
 
   File Name:
-    definitions.h
+    plib_can0.h
 
   Summary:
-    project system definitions.
+    CAN PLIB interface declarations.
 
   Description:
-    This file contains the system-wide prototypes and definitions for a project.
+    The CAN plib provides a simple interface to manage the CAN modules on
+    Microchip microcontrollers. This file defines the interface declarations
+    for the CAN plib.
 
- *******************************************************************************/
+  Remarks:
+    None.
 
+*******************************************************************************/
 //DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -34,112 +41,84 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef DEFINITIONS_H
-#define DEFINITIONS_H
+#ifndef PLIB_CAN0_H
+#define PLIB_CAN0_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
-#include <stddef.h>
+
+/*
+ * This section lists the other files that are included in this file.
+ */
 #include <stdbool.h>
-#include "peripheral/nvmctrl/plib_nvmctrl.h"
-#include "peripheral/evsys/plib_evsys.h"
-#include "peripheral/port/plib_port.h"
-#include "peripheral/clock/plib_clock.h"
-#include "peripheral/nvic/plib_nvic.h"
-#include "peripheral/systick/plib_systick.h"
-#include "peripheral/can/plib_can0.h"
+#include <string.h>
+
+#include "device.h"
+#include "plib_can_common.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
-
-extern "C" {
-
+    extern "C" {
 #endif
 // DOM-IGNORE-END
 
-/* Device Information */
-#define DEVICE_NAME          "PIC32CM1216JH01048"
-#define DEVICE_ARCH          "CORTEX-M0PLUS"
-#define DEVICE_FAMILY        "PIC32CM"
-#define DEVICE_SERIES        "PIC32CMJH01"
+// *****************************************************************************
+// *****************************************************************************
+// Section: Data Types
+// *****************************************************************************
+// *****************************************************************************
+#define CAN0_CLOCK_FREQUENCY    48000000U
 
-/* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 48000000U
+/* CAN0 Message RAM Configuration Size */
+#define CAN0_RX_FIFO0_ELEMENT_SIZE       16U
+#define CAN0_RX_FIFO0_SIZE               16U
+#define CAN0_RX_FIFO1_ELEMENT_SIZE       16U
+#define CAN0_RX_FIFO1_SIZE               16U
+#define CAN0_TX_FIFO_BUFFER_ELEMENT_SIZE 16U
+#define CAN0_TX_FIFO_BUFFER_SIZE         16U
+#define CAN0_TX_EVENT_FIFO_SIZE          8U
+
+/* CAN0_MESSAGE_RAM_CONFIG_SIZE to be used by application or driver
+   for allocating buffer from non-cached contiguous memory */
+#define CAN0_MESSAGE_RAM_CONFIG_SIZE     56U
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: System Functions
+// Section: Interface Routines
 // *****************************************************************************
 // *****************************************************************************
+void CAN0_Initialize(void);
+bool CAN0_MessageTransmitFifo(uint8_t numberOfMessage, CAN_TX_BUFFER *txBuffer);
+uint8_t CAN0_TxFifoFreeLevelGet(void);
+bool CAN0_TxBufferIsBusy(uint8_t bufferNumber);
+bool CAN0_TxEventFifoRead(uint8_t numberOfTxEvent, CAN_TX_EVENT_FIFO *txEventFifo);
+uint8_t CAN0_TxEventFifoFillLevelGet(void);
+bool CAN0_MessageReceiveFifo(CAN_RX_FIFO_NUM rxFifoNum, uint8_t numberOfMessage, CAN_RX_BUFFER *rxBuffer);
+uint8_t CAN0_RxFifoFillLevelGet(CAN_RX_FIFO_NUM rxFifoNum);
+CAN_ERROR CAN0_ErrorGet(void);
+void CAN0_ErrorCountGet(uint8_t *txErrorCount, uint8_t *rxErrorCount);
+bool CAN0_InterruptGet(CAN_INTERRUPT_MASK interruptMask);
+void CAN0_InterruptClear(CAN_INTERRUPT_MASK interruptMask);
+void CAN0_MessageRAMConfigSet(uint8_t *msgRAMConfigBaseAddress);
+void CAN0_SleepModeEnter(void);
+void CAN0_SleepModeExit(void);
+bool CAN0_BitTimingCalculationGet(CAN_BIT_TIMING_SETUP *setup, CAN_BIT_TIMING *bitTiming);
+bool CAN0_BitTimingSet(CAN_BIT_TIMING *bitTiming);
 
-// *****************************************************************************
-/* System Initialization Function
-
-  Function:
-    void SYS_Initialize( void *data )
-
-  Summary:
-    Function that initializes all modules in the system.
-
-  Description:
-    This function initializes all modules in the system, including any drivers,
-    services, middleware, and applications.
-
-  Precondition:
-    None.
-
-  Parameters:
-    data            - Pointer to the data structure containing any data
-                      necessary to initialize the module. This pointer may
-                      be null if no data is required and default initialization
-                      is to be used.
-
-  Returns:
-    None.
-
-  Example:
-    <code>
-    SYS_Initialize ( NULL );
-
-    while ( true )
-    {
-        SYS_Tasks ( );
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
     }
-    </code>
-
-  Remarks:
-    This function will only be called once, after system reset.
-*/
-
-void SYS_Initialize( void *data );
-
-/* Nullify SYS_Tasks() if only PLIBs are used. */
-#define     SYS_Tasks()
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: extern declarations
-// *****************************************************************************
-// *****************************************************************************
-
-
-
-
-//DOM-IGNORE-BEGIN
-#ifdef __cplusplus
-}
 #endif
-//DOM-IGNORE-END
+// DOM-IGNORE-END
 
-#endif /* DEFINITIONS_H */
+#endif // PLIB_CAN0_H
+
 /*******************************************************************************
  End of File
 */
-

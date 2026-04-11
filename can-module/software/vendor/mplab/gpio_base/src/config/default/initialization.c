@@ -140,6 +140,9 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
+	SYSTICK_TimerInitialize();
+    CAN0_Initialize();
+
 
     NVIC_Initialize();
 

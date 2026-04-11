@@ -5,6 +5,7 @@ device: PIC32CM1216JH01048
 deviceLibrary: {}
 groupModules: []
 modules:
+- can0
 - cmsis
 - core
 - dfp
@@ -14,7 +15,7 @@ generatedFileHashHistoryMap:
 - file: ../src/config/default/PIC32CM1216JH01048.ld
   hash: 83ac3f36b69a7fcafeb6b230ecae9984a6d6a1c6eab0af43aa691b3cb5b5d59e
 - file: ../src/config/default/definitions.h
-  hash: 7c984e2d1f314190beed1a119401ca8b867fc8706d0c795bf9ac89187750577a
+  hash: 6b2c8c9b8479c74eb920678a064d7b3da3b2a31925685f2e953b4acefc4e0a6f
 - file: ../src/config/default/device.h
   hash: 1de59e4ae7d06a89bb65ec4c2fe7d017e14bb42cfd9fe9bf17bfb6ffbee45a22
 - file: ../src/config/default/device_cache.h
@@ -24,15 +25,21 @@ generatedFileHashHistoryMap:
 - file: ../src/config/default/exceptions.c
   hash: 42f9da2668e04ccb3473d45b149683a00f80072c6883c7918d6ce93997cd6987
 - file: ../src/config/default/initialization.c
-  hash: 996fd2bd04c8d7e087f6eb4a8482add59e5a0707e1795b4fdd7a70442d4eef53
+  hash: c0369f9c84c70cddb8313ce3a1ae4b0636fa378a2326f39f16cf601b448cad56
 - file: ../src/config/default/interrupts.c
   hash: 534b2fcea9149986c9994ac3237f0e7b6aaac5dc807f32a71882ce6c9f86edfa
 - file: ../src/config/default/interrupts.h
   hash: 90657d3fc02bc4951e5569052befa59e190b3288a4e1335eecb1561bd0b73c05
 - file: ../src/config/default/libc_syscalls.c
   hash: 88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f
+- file: ../src/config/default/peripheral/can/plib_can0.c
+  hash: 74791ecf62ce713fc3410f741a55dce23522a81f1dee11935aba8a3bb0d18fad
+- file: ../src/config/default/peripheral/can/plib_can0.h
+  hash: 7b77ae547f9c521fb8a6e2de182b43ea8e1c8600794e1ec3c9ea955a863b22e1
+- file: ../src/config/default/peripheral/can/plib_can_common.h
+  hash: e0e3b54f69be9d8811bbe507f91daa443ae7bff5dc724ac51baebc160097b2d6
 - file: ../src/config/default/peripheral/clock/plib_clock.c
-  hash: fa7caffd23434bc55b87702077f080d17be8825fddd50d4b47b9fc4ab4c6e456
+  hash: 2c3e74f24ae26b6dacf2e298e3d0d08dffe52018d510e2c49797d002613f08a8
 - file: ../src/config/default/peripheral/clock/plib_clock.h
   hash: 01c269741541514e997ef61546f4dbb0e23f66e27c6a957162557f13b4638baf
 - file: ../src/config/default/peripheral/evsys/plib_evsys.c
@@ -51,6 +58,10 @@ generatedFileHashHistoryMap:
   hash: 8c1467ced4cdd136d14d371e36e300297a91df69d113bebbf16639f547933bec
 - file: ../src/config/default/peripheral/port/plib_port.h
   hash: 17d046f5cc23fa33308e65ca61839d84c3d47b218af3ae1da1f56e34b9256fb2
+- file: ../src/config/default/peripheral/systick/plib_systick.c
+  hash: f64a15f6e5d1d288debe9bfc0146a05a955925dc1f3160e3de6b8cee04eaeaec
+- file: ../src/config/default/peripheral/systick/plib_systick.h
+  hash: 43e550acb1089f7ee29aedf3097aa66ce3e5a25c03b9794c8f230fb1dbd516dd
 - file: ../src/config/default/pin_configurations.csv
   hash: 7f90524ac135bac879fc565e716986775fc8c6e22e1b8e308d540694a998fdad
 - file: ../src/config/default/startup_xc32.c
