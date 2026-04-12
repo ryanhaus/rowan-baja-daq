@@ -2,3 +2,4 @@
 **/*.X/.generated_files/
 **/*.X/nbproject/Makefile-local-*.mk
 **/*.X/build
+*.bak*

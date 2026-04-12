@@ -33,7 +33,7 @@ generatedFileHashHistoryMap:
 - file: ../src/config/default/libc_syscalls.c
   hash: 88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f
 - file: ../src/config/default/peripheral/can/plib_can0.c
-  hash: 74791ecf62ce713fc3410f741a55dce23522a81f1dee11935aba8a3bb0d18fad
+  hash: edd3387c15ab4ea2dabc94bbfa3a8366ee005609903670134cefffcd42df28bf
 - file: ../src/config/default/peripheral/can/plib_can0.h
   hash: 7b77ae547f9c521fb8a6e2de182b43ea8e1c8600794e1ec3c9ea955a863b22e1
 - file: ../src/config/default/peripheral/can/plib_can_common.h

@@ -165,9 +165,9 @@
           <itemPath>gpio_base_default/components/cmsis.yml</itemPath>
           <itemPath>gpio_base_default/components/dfp.yml</itemPath>
           <itemPath>gpio_base_default/components/core.yml</itemPath>
-          <itemPath>gpio_base_default/components/can0.yml</itemPath>
           <itemPath>gpio_base_default/components/nvmctrl.yml</itemPath>
           <itemPath>gpio_base_default/components/evsys.yml</itemPath>
+          <itemPath>gpio_base_default/components/can0.yml</itemPath>
         </logicalFolder>
         <itemPath>gpio_base_default/mcc-config.mc4</itemPath>
       </logicalFolder>
