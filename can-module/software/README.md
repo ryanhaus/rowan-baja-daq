@@ -27,7 +27,7 @@ $ sudo apt install cmake libcriterion-dev pkg-config
 $ sudo dnf install cmake pkgconf-pkg-config
 $ rpm -ivh https://github.com/samber/criterion-rpm-package/releases/download/2.3.3/libcriterion-devel-2.3.3-2.el7.x86_64.rpm
 ```
-Note that there is no provided package for libcriterion by default on Fedora, so [this](https://github.com/samber/criterion-rpm-package) package can be manually installed.
+Note that there is no provided package for libcriterion by default on Fedora, so [this](https://github.com/samber/criterion-rpm-package) package is manually installed separately above.
 Additionally, libcriterion is only needed for tests.
 
 ## Building
