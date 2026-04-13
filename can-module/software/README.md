@@ -14,12 +14,21 @@ You will need the following:
  - [pkg-config](https://gitlab.freedesktop.org/pkg-config/pkg-config) (for tests only)
 
 ### Quickstart on Linux
-The following command can be used to install the required packages on Ubuntu 24.04+.
+The following command can be used to install the required packages on Ubuntu or Fedora.
 **Note that the XC32 compiler and MPLAB X IDE must be downloaded and installed separately from the vendor, see links above.**
 
+#### Ubuntu
 ```sh
 $ sudo apt install cmake libcriterion-dev pkg-config
 ```
+
+#### Fedora
+```sh
+$ sudo dnf install cmake pkgconf-pkg-config
+$ rpm -ivh https://github.com/samber/criterion-rpm-package/releases/download/2.3.3/libcriterion-devel-2.3.3-2.el7.x86_64.rpm
+```
+Note that there is no provided package for libcriterion by default on Fedora, so [this](https://github.com/samber/criterion-rpm-package) package can be manually installed.
+Additionally, libcriterion is only needed for tests.
 
 ## Building
 To build, run the following:
