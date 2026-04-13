@@ -6,8 +6,8 @@ The board features a [48MHz PIC32 microcontroller](#microcontroller), a [CAN Tra
 Below shows an orthographic top and bottom view of the board:
 
 <div align="center">
-    <img src="assets/board_top_ortho.png" width="49%" />
-    <img src="assets/board_bottom_ortho.png" width="49%" />
+    <img src="../assets/board_top_ortho.png" width="49%" />
+    <img src="../assets/board_bottom_ortho.png" width="49%" />
 </div>
 
 > [!NOTE]
@@ -16,14 +16,14 @@ Below shows an orthographic top and bottom view of the board:
 
 ## Schematic
 A schematic of the CAN Module is shown below.
-Higher-quality pdf available [here](assets/schematic.pdf).
+Higher-quality pdf available [here](../assets/schematic.pdf).
 
-![Schematic](assets/schematic.svg)
+![Schematic](../assets/schematic.svg)
 
 ## Dimensions
 The dimensions below may be of use for designing custom enclosures or daughterboards to be mounted to the CAN Module.
 All dimensions are in mm, and the mounting holes are M2. Additionally, the pin headers have 0.05" (1.27mm) hole spacing.
-![Dimensions of board](assets/board_dimensions.svg)
+![Dimensions of board](../assets/board_dimensions.svg)
 
 ## Power Requirements
 The boards should be powered with +5V DC through the appropriate pins in the [vehicle interface](#vehicle-interface).
@@ -56,7 +56,7 @@ All pins on the CAN Module operate at 5V logic levels by default.
 There are two distinct sets of pins on the board that serve different purposes, the sensor interface and the vehicle interface, as described and labelled below.
 
 <div align="center">
-    <img src="assets/board_top_labelled_pin_interface.png" width="50%" />
+    <img src="../assets/board_top_labelled_pin_interface.png" width="50%" />
 </div>
 
 > [!WARNING]
@@ -95,7 +95,7 @@ The pins are organized as a single 4-pin header.
 See the screenshot below to see all labelled test points.
 
 <div align="center">
-    <img src="assets/board_top_labelled_test_points.png" width="75%" />
+    <img src="../assets/board_top_labelled_test_points.png" width="75%" />
 </div>
 
 > [!NOTE]
@@ -117,7 +117,7 @@ A SWD-capable interface will be required to program the boards.
 In order to interface with other devices (i.e., other CAN Modules), they must be wired on the same shared CAN Bus.
 An example layout is shown below:
 
-![CAN Layout Example](assets/example_can_layout.svg)
+![CAN Layout Example](../assets/example_can_layout.svg)
 
 Note that every module shares the same four wires that are routed throughout the vehicle.
 This topology helps significantly reduce the amount of wire required, time spent routing wire, and helps decentralize devices to minimize single points of failure.
