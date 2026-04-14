@@ -24,10 +24,6 @@ int main()
     GPIO_CAN_NSIL_Set();
     GPIO_CAN_STANDBY_Clear();
 
-    // wait before starting
-    GPIO_LED_Set(); // LED off
-    SYSTICK_DelayMs(1000);
-
     // build CAN packet
     memset(can0_tx_fifo, 0x00, CAN0_TX_FIFO_BUFFER_ELEMENT_SIZE); // clear TX fifo
     tx_buffer->id = WRITE_ID(0x469);
