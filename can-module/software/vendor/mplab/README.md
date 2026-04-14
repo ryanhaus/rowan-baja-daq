@@ -18,7 +18,14 @@ The above example is taken from the [blinky target](../../targets/blinky), which
 ## Creating new folders
 It's pretty easy to create new 'libraries' here to be used in targets.
 
-You can either create a new folder here and then create a new project within it using MPLAB IDE, or you can copy an existing folder and rename it and then [modify its contents](#modifying) to your needs.
+You can use an existing project in this folder (for example, `gpio_base`) like so:
+ - (if not already open) Opening the project in MPLAB X IDE by clicking 'File' > 'Open Project', then selecting the desired project.
+ - Open the copying window by right-clicking the top-level project node in the Projects window, then click 'Projects' > 'Copy'.
+ - Change the 'Project Name' to a fitting name.
+ - **Important:** Create a new folder for the project and change the 'Project Location' to that folder. For example, change `[...]/vendor/mplab/gpio_base` to a new folder like `[...]/vendor/mplab/new_project` (where `new_project` is the desired name), then set that folder to the project location. The 'Project Folder' should now be something like `[...]/vendor/mplab/new_project/new_project.X`.
+ - Click 'Copy' (this may take a few seconds).
+ - Manually copy the `CMakeLists.txt` file within the original project folder over to the new one. Then, change the first line to go from something like `set(LIB_NAME gpio_base)` to `set(LIB_NAME new_project)`, changing `new_project` to the new name.
+ - Then, [modify the project](#modifying) to fit your needs.
 
 ## Modifying
 You can open a project in MPLAB IDE by pressing 'File' > 'Open Project' and then navigating to and selecting the `[name].X` folder of the library you want to modify.
