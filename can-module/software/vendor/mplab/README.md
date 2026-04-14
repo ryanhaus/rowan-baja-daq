@@ -36,7 +36,7 @@ Then, click the blue and white MCC (MPLAB Code Configurator) icon in the top bar
 ### Changing pin configurations
 From the MCC window, you can use the 'Project Resources' and 'Device Resources' tabs to add more libraries in. You can also use the 'Plugins' dropdown and select 'Pin Configuration' to change what each pin does.
 
-For the new project to work with some of the libraries, some of the pins will have to have specific names and configurations, see table below for required pins that need to be changed:
+For the new project to work with some of the libraries, some of the pins will have to have specific names and configurations, see table below for required pins that need to be changed (note: you may have to change the Function first before some of the other columns can be changed):
 | Pin Number | Pin ID | Custom Name      | Function | Mode    | Direction | Latch | Pull Up | Pull Down | Drive Strength |
 | ---------- | ------ | -----------      | -------- | ------- | --------- | ----- | ------- | --------- | -------------- |
 | 21         | PA12   | GPIO_LED         | GPIO     | Digital | Out       | Low   | No      | No        | NORMAL         |
