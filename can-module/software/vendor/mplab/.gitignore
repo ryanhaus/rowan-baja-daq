@@ -3,3 +3,4 @@
 **/*.X/nbproject/Makefile-local-*.mk
 **/*.X/build
 *.bak*
+**/main.c
