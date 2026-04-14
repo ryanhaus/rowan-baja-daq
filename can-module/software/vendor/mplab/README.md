@@ -40,7 +40,7 @@ For the new project to work with some of the libraries, some of the pins will ha
 | Pin Number | Pin ID | Custom Name      | Function | Mode    | Direction | Latch | Pull Up | Pull Down | Drive Strength |
 | ---------- | ------ | -----------      | -------- | ------- | --------- | ----- | ------- | --------- | -------------- |
 | 21         | PA12   | GPIO_LED         | GPIO     | Digital | Out       | Low   | No      | No        | NORMAL         |
-| 21         | PA22   | GPIO_CAN_STANDBY | GPIO     | Digital | Out       | Low   | No      | No        | NORMAL         |
+| 31         | PA22   | GPIO_CAN_STANDBY | GPIO     | Digital | Out       | Low   | No      | No        | NORMAL         |
 | 32         | PA23   | GPIO_CAN_NSIL    | GPIO     | Digital | Out       | Low   | No      | No        | NORMAL         |
 | 33         | PA24   |                  | CAN0_TX  | High-Z  | n/a       | Low   | No      | No        | NORMAL         |
 | 34         | PA25   |                  | CAN0_RX  | High-Z  | n/a       | Low   | No      | No        | NORMAL         |
