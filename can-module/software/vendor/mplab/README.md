@@ -68,6 +68,7 @@ Do do this, do the following:
  - Navigate to 'Device Resources' > 'Libraries' > 'Harmony' > 'Peripherals' > 'CAN' > 'CAN0' and click the green checkmark. (this is also the same way to add things like UART, SPI, etc. as needed).
  - A gray box labelled 'CAN0' should have appeared in the MCC window, click that and then open the 'Configuration Options' menu.
  - In the 'Configuration Options' menu, navigate to 'CAN0' > 'Bit Timing Calculation' > 'Nominal Bit Timing', and change 'Bit Rate (Kbps)' to 1000.
+ - Also make sure 'Automatic Nominal Bit Timing Calculation' is checked.
 
 Don't forget to regenerate after these changes, see below.
 
