@@ -34,7 +34,9 @@ You can open a project in MPLAB IDE by pressing 'File' > 'Open Project' and then
 Then, click the blue and white MCC (MPLAB Code Configurator) icon in the top bar to open it.
 
 ### Changing pin configurations
-From the MCC window, you can use the 'Project Resources' and 'Device Resources' tabs to add more libraries in. You can also use the 'Plugins' dropdown and select 'Pin Configuration' to change what each pin does.
+From the MCC window, you can use the 'Project Resources' and 'Device Resources' tabs to add more libraries in. **Note: you will have to add the CAN0 peripheral library, see below**.
+
+You can also use the 'Plugins' dropdown and select 'Pin Configuration' to change what each pin does.
 
 For the new project to work with some of the libraries, some of the pins will have to have specific names and configurations, see table below for required pins that need to be changed (note: you may have to change the Function first before some of the other columns can be changed):
 | Pin Number | Pin ID | Custom Name      | Function | Mode    | Direction | Latch | Pull Up | Pull Down | Drive Strength |
@@ -56,7 +58,18 @@ To enable it, do the following:
  - In the 'Project Graph' window, click the 'System' icon.
  - In the 'Configuration Options' window, open the 'System' > 'Cortex-M0+ Configuration' > 'SysTick' menu, then toggle 'Enable SysTick'.
 
-You will need to regenerate the files after doing this.
+You will need to regenerate the files after doing this, see below.
+
+### Adding CAN0 Peripheral Library
+You will have to add the CAN0 peripheral library in order for some of the code to work with your board library.
+
+Do do this, do the following:
+ - Open MCC if you have not already for your project.
+ - Navigate to 'Device Resources' > 'Libraries' > 'Harmony' > 'Peripherals' > 'CAN' > 'CAN0' and click the green checkmark. (this is also the same way to add things like UART, SPI, etc. as needed).
+ - A gray box labelled 'CAN0' should have appeared in the MCC window, click that and then open the 'Configuration Options' menu.
+ - In the 'Configuration Options' menu, navigate to 'CAN0' > 'Bit Timing Calculation' > 'Nominal Bit Timing', and change 'Bit Rate (Kbps)' to 1000.
+
+Don't forget to regenerate after these changes, see below.
 
 ### Regenerating files
 After making changes, you have to regenerate the header files. You can do this by pressing the blue 'Generate' button in the top left under the 'Project Resources' tab. You will likely have to deal with a merge. You can merge all changes (probably what you want) for each file changed by pressing the blue button in the top middle. More details [here](https://developerhelp.microchip.com/xwiki/bin/view/software-tools/mcc/merge/).
