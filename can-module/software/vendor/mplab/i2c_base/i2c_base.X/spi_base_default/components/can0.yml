@@ -1,0 +1,253 @@
+configVersion: 1.0.0
+componentName: can0
+coreVersion: 5.8.4
+device: PIC32CM1216JH01048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: can0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: can0
+          x: '45'
+          y: '186'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    AUTO_NOMINAL_BIT_TIMING_CALCULATION:
+      attributes:
+        id: AUTO_NOMINAL_BIT_TIMING_CALCULATION
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CALCULATED_DATA_BITRATE:
+      attributes:
+        id: CALCULATED_DATA_BITRATE
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '979'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CALCULATED_DATA_ERRORRATE:
+      attributes:
+        id: CALCULATED_DATA_ERRORRATE
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '95.918'
+          type: Dynamic
+        type: Values
+      type: String
+    CALCULATED_NOMINAL_BITRATE:
+      attributes:
+        id: CALCULATED_NOMINAL_BITRATE
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '1000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CALCULATED_NOMINAL_ERRORRATE:
+      attributes:
+        id: CALCULATED_NOMINAL_ERRORRATE
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '0.000'
+          type: Dynamic
+        type: Values
+      type: String
+    CAN_OPMODE:
+      attributes:
+        id: CAN_OPMODE
+      children:
+      - children:
+        - attributes:
+            value: NORMAL
+          type: User
+        type: Values
+      type: Combo
+    DATA_TIME_QUANTA_PERIOD:
+      attributes:
+        id: DATA_TIME_QUANTA_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '20.833'
+          type: Dynamic
+        type: Values
+      type: String
+    DBTP_DSJW:
+      attributes:
+        id: DBTP_DSJW
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '8'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DBTP_DTSEG1:
+      attributes:
+        id: DBTP_DTSEG1
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '71'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DBTP_DTSEG2:
+      attributes:
+        id: DBTP_DTSEG2
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '24'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DBTP_TOTAL_TIME_QUANTA:
+      attributes:
+        id: DBTP_TOTAL_TIME_QUANTA
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '49'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_NBRP:
+      attributes:
+        id: NBTP_NBRP
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: can0
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_NSJW:
+      attributes:
+        id: NBTP_NSJW
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_NTSEG1:
+      attributes:
+        id: NBTP_NTSEG1
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '14'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_NTSEG2:
+      attributes:
+        id: NBTP_NTSEG2
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_TOTAL_TIME_QUANTA:
+      attributes:
+        id: NBTP_TOTAL_TIME_QUANTA
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '16'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NOMINAL_BITRATE:
+      attributes:
+        id: NOMINAL_BITRATE
+      children:
+      - children:
+        - attributes:
+            value: '1000'
+          type: User
+        type: Values
+      type: Integer
+    NOMINAL_SAMPLE_POINT:
+      attributes:
+        id: NOMINAL_SAMPLE_POINT
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: can0
+            value: '93.75'
+          type: Dynamic
+        type: Values
+      type: Float
+    NOMINAL_TIME_QUANTA_PERIOD:
+      attributes:
+        id: NOMINAL_TIME_QUANTA_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: can0
+            value: '62.500'
+          type: Dynamic
+        type: Values
+      type: String
+  userData: {}
