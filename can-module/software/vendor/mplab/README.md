@@ -47,6 +47,17 @@ For the new project to work with some of the libraries, some of the pins will ha
 
 Otherwise, pins PA04 - PA11 (pin numbers 9 - 16) are exposed on the GPIO header on the board and can be set to whatever you want.
 
+After configuring pins, you will need to regenerate the files (see below).
+
+### Enabling SysTick
+SysTick allows you to easily delay things in your program with the `SYSTICK_DelayMs` and `SYSTICK_DelayUs` functions and is required for some libraries.
+
+To enable it, do the following:
+ - In the 'Project Graph' window, click the 'System' icon.
+ - In the 'Configuration Options' window, open the 'System' > 'Cortex-M0+ Configuration' > 'SysTick' menu, then toggle 'Enable SysTick'.
+
+You will need to regenerate the files after doing this.
+
 ### Regenerating files
 After making changes, you have to regenerate the header files. You can do this by pressing the blue 'Generate' button in the top left under the 'Project Resources' tab. You will likely have to deal with a merge. You can merge all changes (probably what you want) for each file changed by pressing the blue button in the top middle. More details [here](https://developerhelp.microchip.com/xwiki/bin/view/software-tools/mcc/merge/).
 
