@@ -39,6 +39,7 @@
             </logicalFolder>
             <logicalFolder name="systick" displayName="systick" projectFiles="true">
               <itemPath>../../gpio_base/src/config/default/peripheral/systick/plib_systick.h</itemPath>
+              <itemPath>../src/config/default/peripheral/systick/plib_systick.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <itemPath>../../gpio_base/src/config/default/device.h</itemPath>
@@ -343,6 +344,7 @@
             </logicalFolder>
             <logicalFolder name="systick" displayName="systick" projectFiles="true">
               <itemPath>../../gpio_base/src/config/default/peripheral/systick/plib_systick.c</itemPath>
+              <itemPath>../src/config/default/peripheral/systick/plib_systick.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">

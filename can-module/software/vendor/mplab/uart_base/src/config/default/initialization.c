@@ -142,6 +142,7 @@ void SYS_Initialize ( void* data )
 
     SERCOM0_USART_Initialize();
 
+	SYSTICK_TimerInitialize();
 
     NVIC_Initialize();
 

@@ -1,22 +1,17 @@
 /*******************************************************************************
-  SERCOM Universal Synchronous/Asynchrnous Receiver/Transmitter PLIB
+  Interface definition of SYSTICK PLIB.
 
-  Company
+  Company:
     Microchip Technology Inc.
 
-  File Name
-    plib_sercom0_usart.h
+  File Name:
+    plib_systick.h
 
-  Summary
-    USART peripheral library interface.
+  Summary:
+    Interface definition of the System Timer Plib (SYSTICK).
 
-  Description
-    This file defines the interface to the USART peripheral library. This
-    library provides access to and control of the associated peripheral
-    instance.
-
-  Remarks:
-    None.
+  Description:
+    This file defines the interface for the SYSTICK Plib.
 *******************************************************************************/
 
 /*******************************************************************************
@@ -42,74 +37,42 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef PLIB_SERCOM0_USART_H // Guards against multiple inclusion
-#define PLIB_SERCOM0_USART_H
+#ifndef PLIB_SYSTICK_H    // Guards against multiple inclusion
+#define PLIB_SYSTICK_H
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: Included Files
-// *****************************************************************************
-// *****************************************************************************
+#include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
 
-#include "plib_sercom_usart_common.h"
-
-// DOM-IGNORE-BEGIN
 #ifdef __cplusplus // Provide C++ Compatibility
-
     extern "C" {
+#endif
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Interface
+// *****************************************************************************
+// *****************************************************************************
+
+#define SYSTICK_FREQ   48000000U
+
+
+/***************************** SYSTICK API *******************************/
+void SYSTICK_TimerInitialize ( void );
+void SYSTICK_TimerRestart ( void );
+void SYSTICK_TimerStart ( void );
+void SYSTICK_TimerStop ( void );
+void SYSTICK_TimerPeriodSet ( uint32_t period );
+uint32_t SYSTICK_TimerPeriodGet ( void );
+uint32_t SYSTICK_TimerCounterGet ( void );
+uint32_t SYSTICK_TimerFrequencyGet ( void );
+void SYSTICK_DelayMs ( uint32_t delay_ms );
+void SYSTICK_DelayUs ( uint32_t delay_us );
+
+bool SYSTICK_TimerPeriodHasExpired(void);
+#ifdef __cplusplus // Provide C++ Compatibility
+ }
+#endif
 
 #endif
-// DOM-IGNORE-END
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Interface Routines
-// *****************************************************************************
-// *****************************************************************************
-
-void SERCOM0_USART_Initialize( void );
-
-bool SERCOM0_USART_SerialSetup( USART_SERIAL_SETUP * serialSetup, uint32_t clkFrequency );
-
-void SERCOM0_USART_Enable( void );
-
-void SERCOM0_USART_Disable( void );
-
-void SERCOM0_USART_TransmitterEnable( void );
-
-void SERCOM0_USART_TransmitterDisable( void );
-
-bool SERCOM0_USART_Write( void *buffer, const size_t size );
-
-bool SERCOM0_USART_TransmitComplete( void );
-
-
-bool SERCOM0_USART_TransmitterIsReady( void );
-
-void SERCOM0_USART_WriteByte( int data );
-
-
-void SERCOM0_USART_ReceiverEnable( void );
-
-void SERCOM0_USART_ReceiverDisable( void );
-
-bool SERCOM0_USART_Read( void *buffer, const size_t size );
-
-bool SERCOM0_USART_ReceiverIsReady( void );
-
-int SERCOM0_USART_ReadByte( void );
-
-USART_ERROR SERCOM0_USART_ErrorGet( void );
-
-uint32_t SERCOM0_USART_FrequencyGet( void );
-
-
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    }
-
-#endif
-// DOM-IGNORE-END
-
-#endif //PLIB_SERCOM0_USART_H

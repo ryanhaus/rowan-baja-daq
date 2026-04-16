@@ -105,4 +105,36 @@ data:
           type: Dynamic
         type: Values
       type: Boolean
+    USART_INTERRUPT_MODE_ENABLE:
+      attributes:
+        id: USART_INTERRUPT_MODE_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USART_RING_BUFFER_MODE_ENABLE:
+      attributes:
+        id: USART_RING_BUFFER_MODE_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: sercom0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    USART_OPERATING_MODE:
+      attributes:
+        id: USART_OPERATING_MODE
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
   userData: {}
