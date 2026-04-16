@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <definitions.h>
+#include <board_led.h>
 
 #define WRITE_ID(id) (id << 18)
 
@@ -35,15 +36,13 @@ int main()
     memcpy(tx_buffer->data, (uint8_t*)data, sizeof(data));
 
     // main loop: send CAN packets every 100 ms, blink LED while transmitting
-    // note: the LED's cathode is connected to PA12 (GPIO_LED), so setting the gpio to 0 turns on the LED, and setting to 1 turns it off
     while (true)
     {
-        GPIO_LED_Clear(); // LED on
+        LED_On();
         bool can_success = CAN0_MessageTransmitFifo(1, tx_buffer);
 
         SYSTICK_DelayMs(50);
-        GPIO_LED_Set(); // LED off
-                        
+        LED_Off();
         SYSTICK_DelayMs(can_success ? 100 : 500);
     }
 

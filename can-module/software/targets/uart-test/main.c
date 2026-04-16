@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <definitions.h>
-
+#include <board_led.h>
 
 int main()
 {
@@ -14,11 +14,11 @@ int main()
 
     while (true)
     {
-        GPIO_LED_Clear();
+        LED_On();
 
         SYSTICK_DelayMs(50);
         SERCOM0_USART_Write(str, sizeof(str));
-        GPIO_LED_Set();
+        LED_Off();
 
         SYSTICK_DelayMs(200);
     }

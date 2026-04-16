@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <definitions.h>
-
+#include <board_led.h>
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
 
     while (true)
     {
-        GPIO_LED_Toggle();
+        LED_Toggle();
         SYSTICK_DelayMs(250);
     }
 

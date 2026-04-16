@@ -7,6 +7,7 @@ add_executable(${TARGET_NAME}
 target_link_libraries(${TARGET_NAME}
     PRIVATE
         gpio_base
+        board_led
 )
 
 # convert elf to hex
