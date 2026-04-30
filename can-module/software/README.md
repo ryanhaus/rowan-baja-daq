@@ -46,7 +46,7 @@ This project uses the Criterion testing library, which can be ran using CTest (i
 Tests need to be built within the `tests` directory. To build the tests, run the following within the `tests` directory (same commands for regular building, just run within the `tests` directory):
 ```sh
 $ cmake -B bin
-$ cmake --build bin
+$ cmake --build bin -j $(nproc)
 ```
 
 To run tests, run the following:
