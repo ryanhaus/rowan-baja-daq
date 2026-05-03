@@ -1,26 +1,22 @@
-#include <stddef.h>
 #include <stdbool.h>
-#include <stdlib.h>
-#include <definitions.h>
-#include <board_led.h>
+#include <hal_led.h>
+#include <hal_system.h>
+#include <hal_i2c.h>
 
 int main()
 {
-    SYS_Initialize(NULL);
-    SYSTICK_TimerStart();
-    SERCOM0_I2C_Initialize();
+    hal_system_init();
+    hal_i2c_init();
 
     char str[] = "Hello world!";
 
     while (true)
     {
         LED_On();
-
-        SYSTICK_DelayMs(50);
-        SERCOM0_I2C_Write(0x55, (uint8_t*)str, sizeof(str));
+        hal_system_delay_ms(50);
+        hal_i2c_write(0x55, (uint8_t*)str, sizeof(str));
         LED_Off();
-
-        SYSTICK_DelayMs(200);
+        hal_system_delay_ms(200);
     }
 
     return -1;

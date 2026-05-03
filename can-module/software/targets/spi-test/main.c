@@ -1,26 +1,22 @@
-#include <stddef.h>
 #include <stdbool.h>
-#include <stdlib.h>
-#include <definitions.h>
-#include <board_led.h>
+#include <hal_led.h>
+#include <hal_system.h>
+#include <hal_spi.h>
 
 int main()
 {
-    SYS_Initialize(NULL);
-    SYSTICK_TimerStart();
-    SERCOM0_SPI_Initialize();
+    hal_system_init();
+    hal_spi_init();
 
     char str[] = "Hello world!";
 
     while (true)
     {
         LED_On();
-
-        SYSTICK_DelayMs(50);
-        SERCOM0_SPI_Write(str, sizeof(str));
+        hal_system_delay_ms(50);
+        hal_spi_write((uint8_t*)str, sizeof(str));
         LED_Off();
-
-        SYSTICK_DelayMs(200);
+        hal_system_delay_ms(200);
     }
 
     return -1;

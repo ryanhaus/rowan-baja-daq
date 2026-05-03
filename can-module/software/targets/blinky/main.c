@@ -1,18 +1,15 @@
-#include <stddef.h>
 #include <stdbool.h>
-#include <stdlib.h>
-#include <definitions.h>
-#include <board_led.h>
+#include <hal_led.h>
+#include <hal_system.h>
 
 int main()
 {
-    SYS_Initialize(NULL);
-    SYSTICK_TimerStart();
+    hal_system_init();
 
     while (true)
     {
         LED_Toggle();
-        SYSTICK_DelayMs(250);
+        hal_system_delay_ms(250);
     }
 
     return -1;
