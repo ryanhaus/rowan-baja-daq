@@ -83,4 +83,6 @@ The `targets` directory contains each individual target program source code. Thi
 
 Finally, the `tests` directory contains software simulation test files for ensuring that everything works.
 
+The below diagram shows what source files get used by other sources. We can see that the HAL uses vendor files and simulation files. Then, we can see that the HAL functions get called in custom libraries or by targets. Note that libraries and targets never call vendor or simulation functions directly, it is always through the HAL to ensure cross-platform compatibility. Finally, we see that test programs may call functions from custom targets or custom libraries.
+
 ![CMAKE Structure](../assets/CMakeStructure.png)
