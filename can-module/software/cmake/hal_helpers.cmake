@@ -35,24 +35,3 @@ function(add_board_executable NAME)
         )
     endif()
 endfunction()
-
-function(register_hal_libraries DIR)
-    # Find all directories starting with 'hal_'
-    file(GLOB HAL_DIRS RELATIVE ${DIR} hal_*)
-    
-    foreach(HAL ${HAL_DIRS})
-        if(IS_DIRECTORY ${DIR}/${HAL})
-            # Define an INTERFACE library so that its source is compiled
-            # specifically for each executable it is linked to.
-            add_library(${HAL} INTERFACE)
-            
-            # Add the target-specific source file
-            target_sources(${HAL} INTERFACE ${DIR}/${HAL}/${HAL}_${BOARD_TARGET}.c)
-            
-            # Export the include directory
-            target_include_directories(${HAL} INTERFACE ${DIR}/${HAL})
-            
-            message(STATUS "Registered HAL Library: ${HAL} (${BOARD_TARGET})")
-        endif()
-    endforeach()
-endfunction()
