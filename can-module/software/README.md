@@ -35,7 +35,7 @@ To build, run the following:
 
 ```sh
 $ cmake -B bin # Generates CMake files, generally only needed once (unless you edit or add new CMake configs)
-$ cmake --build bin # Actually builds the targets
+$ cmake --build bin -j $(nproc) # Actually builds the targets
 ```
 
 This will create build files and compile the target programs in the `bin` directory.
