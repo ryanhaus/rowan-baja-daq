@@ -1,18 +1,4 @@
-set(TARGET_NAME blinky)
-
-add_executable(${TARGET_NAME}
-    main.c
-)
-
-target_link_libraries(${TARGET_NAME}
-    PRIVATE
-        gpio_base
-        board_led
-)
-
-# convert elf to hex
-add_custom_command(TARGET ${TARGET_NAME}
-    POST_BUILD
-    COMMAND xc32-objcopy -O ihex ${TARGET_NAME} ${TARGET_NAME}.hex
-    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+add_board_executable(blinky 
+    SOURCES main.c 
+    BASE_LIB gpio_base
 )

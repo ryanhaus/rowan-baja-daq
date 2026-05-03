@@ -1,8 +1,19 @@
-# Auto-detect vendor folders
-file(GLOB LIB_DIRS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *)
+# Hardware Support Discovery
+# Only includes vendor libraries for relevant targets to avoid symbol conflicts.
 
-foreach(dir ${LIB_DIRS})
+file(GLOB VENDOR_DIRS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *)
+
+foreach(dir ${VENDOR_DIRS})
     if(IS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/${dir})
-        add_subdirectory(${dir})
+        
+        # MPLAB Harmony projects are currently hardware-specific
+        if(${dir} STREQUAL "mplab")
+            if(BOARD_TARGET STREQUAL "pic32")
+                add_subdirectory(${dir})
+            endif()
+        else()
+            add_subdirectory(${dir})
+        endif()
+        
     endif()
 endforeach()

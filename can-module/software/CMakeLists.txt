@@ -1,24 +1,41 @@
 cmake_minimum_required(VERSION 3.23)
 
-# Use xc-32 compiler
-set(CMAKE_C_COMPILER "xc32-gcc")
-set(CMAKE_CXX_COMPILER "xc32-g++")
-set(CMAKE_ASM_COMPILER "xc32-as")
-set(CMAKE_C_FLAGS "-mprocessor=32CM1216JH01048 -mdfp=/opt/microchip/mplabx/v6.30/packs/Microchip/PIC32CM-JH_DFP/1.5.236/PIC32CM-JH01")
+# if BOARD_TARGET is not set, build all targets (superbuild)
+if(NOT BOARD_TARGET)
+    project(can-module-superbuild NONE)
+    include(ExternalProject)
 
-project(can-module)
+    set(SUPPORTED_VARIANTS pic32 simulation)
+    
+    foreach(VARIANT ${SUPPORTED_VARIANTS})
+        set(TOOLCHAIN_ARG "")
+        if(${VARIANT} STREQUAL "pic32")
+            set(TOOLCHAIN_ARG "-DCMAKE_TOOLCHAIN_FILE=${CMAKE_CURRENT_SOURCE_DIR}/cmake/pic32.cmake")
+        endif()
 
-# Put all executables in the bin directory, not their own separate ones
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+        ExternalProject_Add(${VARIANT}_build
+            SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
+            BINARY_DIR ${CMAKE_BINARY_DIR}/${VARIANT}
+            CMAKE_ARGS 
+                -DBOARD_TARGET=${VARIANT}
+                ${TOOLCHAIN_ARG}
+            INSTALL_COMMAND ""
+            BUILD_ALWAYS ON
+        )
+    endforeach()
 
-# For file discovery in nvim
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+    message(STATUS "Configuring [${SUPPORTED_VARIANTS}]")
 
-# Add vendor files
-add_subdirectory(vendor)
+# if BOARD_TARGET is set, build just that target
+else()
+    project(can-module C)
 
-# Add shared libraries
-add_subdirectory(lib)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+    set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+    
+    include(cmake/hal_helpers.cmake)
 
-# Add targets
-add_subdirectory(targets)
+    add_subdirectory(vendor)
+    add_subdirectory(lib)
+    add_subdirectory(targets)
+endif()
