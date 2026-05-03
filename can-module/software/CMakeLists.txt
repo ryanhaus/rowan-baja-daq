@@ -36,6 +36,7 @@ else()
     include(cmake/hal_helpers.cmake)
 
     add_subdirectory(vendor)
+    add_subdirectory(hal)
     add_subdirectory(lib)
     add_subdirectory(targets)
 endif()
