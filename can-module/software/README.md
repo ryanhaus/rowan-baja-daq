@@ -34,25 +34,25 @@ Additionally, libcriterion is only needed for tests.
 To build, run the following:
 
 ```sh
-$ cmake -B bin # Generates CMake files, generally only needed once (unless you edit or add new CMake configs)
-$ cmake --build bin -j $(nproc) # Actually builds the targets
+$ cmake -B build # Generates CMake files, generally only needed once (unless you edit or add new CMake configs)
+$ cmake --build build -j $(nproc) # Actually builds the targets
 ```
 
-This will create build files and compile the target programs in the `bin` directory.
+This will create build files and compile the target programs in the `build` directory.
 
 ## Running Tests
 This project uses the Criterion testing library, which can be ran using CTest (included with CMake).
 
 Tests need to be built within the `tests` directory. To build the tests, run the following within the `tests` directory (same commands for regular building, just run within the `tests` directory):
 ```sh
-$ cmake -B bin
-$ cmake --build bin -j $(nproc)
+$ cmake -B build
+$ cmake --build build -j $(nproc)
 ```
 
 To run tests, run the following:
 
 ```sh
-$ ctest --test-dir bin
+$ ctest --test-dir build
 ```
 
 ## Flashing to hardware
@@ -64,9 +64,9 @@ See Table 3.3.1 in the [user manual](https://ww1.microchip.com/downloads/aemDocu
 Note that the MPLAB SNAP will **not** provide power to the CAN Module, and it needs a voltage reference (5V) connected to the VDD pin. I made a simple wire harness to connect a +5V source to the VDD pin on the MPLAB SNAP and the +5V pin on the CAN Module, as well as connect all grounds. I also added wires to connect the SWDIO and SWCLK pins together between the MPLAB SNAP and CAN Module.
 
 ### How to flash
-I used the MPLAB IPE software to flash the generated hex file in the `bin` directory to the microcontroller.
+I used the MPLAB IPE software to flash the generated hex file in the `build` directory to the microcontroller.
 
-Simply select the device as a `PIC32CM1216JH01048`, select the hex file for the target (located in `bin` as `[name].hex`), then click 'Program'.
+Simply select the device as a `PIC32CM1216JH01048`, select the hex file for the target (located in `build` as `[name].hex`), then click 'Program'.
 
 ## Project Structure
 This section contains a little bit of information about how the software is structured for this project.
