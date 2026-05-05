@@ -1,9 +1,25 @@
 set(CMAKE_SYSTEM_NAME Generic)
 
+# Automatically find the latest XC32 compiler
+if(NOT XC32_BIN_PATH)
+    file(GLOB XC32_VERSIONS "/opt/microchip/xc32/v*")
+    list(SORT XC32_VERSIONS COMPARE NATURAL ORDER DESCENDING)
+    list(GET XC32_VERSIONS 0 LATEST_XC32)
+
+    if(LATEST_XC32)
+        set(XC32_BIN_PATH "${LATEST_XC32}/bin" CACHE PATH "Path to XC32 bin directory")
+    endif()
+endif()
+
+if(XC32_BIN_PATH)
+    set(XC32_PREFIX "${XC32_BIN_PATH}/")
+    message(STATUS "Using XC32 from: ${XC32_BIN_PATH}")
+endif()
+
 # Use xc-32 compiler
-set(CMAKE_C_COMPILER "xc32-gcc")
-set(CMAKE_CXX_COMPILER "xc32-g++")
-set(CMAKE_ASM_COMPILER "xc32-as")
+set(CMAKE_C_COMPILER "${XC32_PREFIX}xc32-gcc")
+set(CMAKE_CXX_COMPILER "${XC32_PREFIX}xc32-g++")
+set(CMAKE_ASM_COMPILER "${XC32_PREFIX}xc32-as")
 
 # Automatically find the latest Microchip Device Family Pack (MDFP)
 if(NOT MICROCHIP_MDFP_PATH)

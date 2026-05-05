@@ -29,7 +29,7 @@ function(add_board_executable NAME)
         # Convert ELF to Intel HEX for flashing
         add_custom_command(TARGET ${TARGET_NAME}
             POST_BUILD
-            COMMAND xc32-objcopy -O ihex ${TARGET_NAME} ${TARGET_NAME}.hex
+            COMMAND ${XC32_BIN_PATH}/xc32-objcopy -O ihex ${TARGET_NAME} ${TARGET_NAME}.hex
             WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
             COMMENT "Generating ${TARGET_NAME}.hex"
         )
