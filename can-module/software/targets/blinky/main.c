@@ -2,7 +2,7 @@
 #include <hal_led.h>
 #include <hal_system.h>
 
-int main()
+int main(void)
 {
     hal_system_init();
 
