@@ -8,9 +8,10 @@ The software is written in the C programming language, and uses CMake as the bui
 ## Prerequisites
 You will need the following:
  - [CMake](https://cmake.org/download/)
- - [MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
+ - [MPLAB X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide) (for PIC32 target)
     - You will need to install the packages for '32-bit MCUs' and 'XC32 Compiler' when prompted.
     - When installing the XC32 compiler, check the 'Add to PATH' option when prompted.
+ - [ARM GCC Cross Compiler](https://developer.arm.com/downloads/-/gnu-rm) (for RP2040 target)
  - [pkg-config](https://gitlab.freedesktop.org/pkg-config/pkg-config) (for tests only)
 
 ### Quickstart on Linux
@@ -19,12 +20,12 @@ The following command can be used to install the required packages on Ubuntu or 
 
 #### Ubuntu
 ```sh
-$ sudo apt install cmake libcriterion-dev pkg-config
+$ sudo apt install cmake libcriterion-dev pkg-config gcc-arm-none-eabi libnewlib-arm-none-eabi
 ```
 
 #### Fedora
 ```sh
-$ sudo dnf install cmake pkgconf-pkg-config
+$ sudo dnf install cmake pkgconf-pkg-config arm-none-eabi-gcc-cs arm-none-eabi-newlib arm-none-eabi-gcc-cs-c++
 $ rpm -ivh https://github.com/samber/criterion-rpm-package/releases/download/2.3.3/libcriterion-devel-2.3.3-2.el7.x86_64.rpm
 ```
 Note that there is no provided package for libcriterion by default on Fedora, so [this](https://github.com/samber/criterion-rpm-package) package is manually installed separately above.
@@ -63,10 +64,15 @@ See Table 3.3.1 in the [user manual](https://ww1.microchip.com/downloads/aemDocu
 
 Note that the MPLAB SNAP will **not** provide power to the CAN Module, and it needs a voltage reference (5V) connected to the VDD pin. I made a simple wire harness to connect a +5V source to the VDD pin on the MPLAB SNAP and the +5V pin on the CAN Module, as well as connect all grounds. I also added wires to connect the SWDIO and SWCLK pins together between the MPLAB SNAP and CAN Module.
 
-### How to flash
-I used the MPLAB IPE software to flash the generated hex file in the `build` directory to the microcontroller.
+### How to flash PIC32
+I used the MPLAB IPE software to flash the generated hex file in the `build/pic32` directory to the microcontroller.
 
-Simply select the device as a `PIC32CM1216JH01048`, select the hex file for the target (located in `build` as `[name].hex`), then click 'Program'.
+Simply select the device as a `PIC32CM1216JH01048`, select the hex file for the target (located in `build/pic32` as `[name]_pic32.hex`), then click 'Program'.
+
+### How to flash Raspberry Pi Pico (RP2040)
+Built file is `build/rp2040/[name]_rp2040.uf2`
+
+Instructions TBD
 
 ## Project Structure
 This section contains a little bit of information about how the software is structured for this project.

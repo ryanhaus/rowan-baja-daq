@@ -33,5 +33,24 @@ function(add_board_executable NAME)
             WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
             COMMENT "Generating ${TARGET_NAME}.hex"
         )
+    elseif(BOARD_TARGET STREQUAL "rp2040")
+        target_link_libraries(${TARGET_NAME}
+            PRIVATE
+                pico_stdlib
+                hardware_gpio
+                hardware_uart
+                hardware_i2c
+                hardware_spi
+        )
+        pico_set_binary_type(${TARGET_NAME} copy_to_ram)
+        pico_add_extra_outputs(${TARGET_NAME})
+
+        add_custom_command(TARGET ${TARGET_NAME}
+            POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                ${CMAKE_CURRENT_BINARY_DIR}/${TARGET_NAME}.uf2
+                ${CMAKE_BINARY_DIR}/${TARGET_NAME}.uf2
+            COMMENT "Copying ${TARGET_NAME}.uf2 to ${CMAKE_BINARY_DIR}"
+        )
     endif()
 endfunction()

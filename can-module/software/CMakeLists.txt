@@ -5,7 +5,7 @@ if(NOT BOARD_TARGET)
     project(can-module-superbuild NONE)
     include(ExternalProject)
 
-    set(SUPPORTED_VARIANTS pic32 simulation)
+    set(SUPPORTED_VARIANTS pic32 simulation rp2040)
     
     foreach(VARIANT ${SUPPORTED_VARIANTS})
         set(TOOLCHAIN_ARG "")
@@ -28,7 +28,16 @@ if(NOT BOARD_TARGET)
 
 # if BOARD_TARGET is set, build just that target
 else()
-    project(can-module C)
+    if(BOARD_TARGET STREQUAL "rp2040")
+        set(PICO_SDK_FETCH_FROM_GIT ON)
+        include(cmake/pico_sdk_import.cmake)
+    endif()
+
+    project(can-module C CXX ASM)
+
+    if(BOARD_TARGET STREQUAL "rp2040")
+        pico_sdk_init()
+    endif()
 
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
     set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

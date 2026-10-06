@@ -19,3 +19,7 @@ foreach(HAL ${HAL_DIRS})
         
     endif()
 endforeach()
+
+if(BOARD_TARGET STREQUAL "rp2040")
+    target_link_libraries(hal_can INTERFACE can2040)
+endif()
