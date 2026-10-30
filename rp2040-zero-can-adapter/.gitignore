@@ -1,0 +1,16 @@
+*autosave*
+*auto_save*
+*-backups
+*.kicad_prl
+*.lck
+*.bak
+production
+fabrication-toolkit-options.json
+*.step
+*.stp
+*.gbr
+*.gbrjob
+*.glb
+fp-info-cache
+*-drc*
+.history

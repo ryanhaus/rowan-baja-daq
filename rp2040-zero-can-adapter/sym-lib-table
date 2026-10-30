@@ -1,0 +1,7 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ATA6561-GAQW-N") (type "KiCad") (uri "${KIPRJMOD}/lib/ATA6561-GAQW-N/ATA6561-GAQW-N.kicad_sym") (options "") (descr ""))
+	(lib (name "SMDA05C-4-2E3-TR7") (type "KiCad") (uri "${KIPRJMOD}/lib/SMDA05C-4-2E3-TR7/SMDA05C-4-2E3-TR7.kicad_sym") (options "") (descr ""))
+	(lib (name "NID5100GWH") (type "KiCad") (uri "${KIPRJMOD}/lib/NID5100GWH/NID5100GWH.kicad_sym") (options "") (descr ""))
+	(lib (name "PESD2CANFD27LU-Q") (type "KiCad") (uri "${KIPRJMOD}/lib/PESD2CANFD27LU-Q/PESD2CANFD27LU-Q.kicad_sym") (options "") (descr ""))
+)
