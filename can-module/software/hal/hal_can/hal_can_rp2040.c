@@ -5,8 +5,8 @@
 #include <hardware/irq.h>
 #include <can2040.h>
 
-#define CAN_RX_PIN 2
-#define CAN_TX_PIN 3
+#define CAN_RX_PIN 0
+#define CAN_TX_PIN 1
 #define CAN_BITRATE 1000000
 #define CAN_QUEUE_SIZE 32
 
