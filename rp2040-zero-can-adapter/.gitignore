@@ -9,6 +9,7 @@ fabrication-toolkit-options.json
 *.step
 *.stp
 *.gbr
+*.drl
 *.gbrjob
 *.glb
 fp-info-cache
